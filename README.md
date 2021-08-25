@@ -23,7 +23,14 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 
 1.	You can get a different non-zero integer when alphabetic character is passed to isalpha() on your system. But, when you pass non-alphabetic character to isalpha(), it always returns 0.
 
-##### finded in web: https://www.programiz.com/c-programming/library-function/ctype.h/isalpha
+##### finded in web
+1. https://www.programiz.com/c-programming/library-function/ctype.h/isalpha
+
+#### ft_isdigit
+
+##### finded in web:
+1. https://www.programiz.com/c-programming/library-function/ctype.h/isdigit
+2. https://www.ime.usp.br/~pf/algoritmos/apend/ctype.h.html
 
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
