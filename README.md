@@ -32,6 +32,11 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isdigit
 2. https://www.ime.usp.br/~pf/algoritmos/apend/ctype.h.html
 
+#### ft_isalnum
+
+##### finded in web:
+1. https://www.programiz.com/c-programming/library-function/ctype.h/isalnum
+
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
 #### Linkedin: https://www.linkedin.com/in/luanldcarvalho/
