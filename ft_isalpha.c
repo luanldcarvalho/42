@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/25 16:48:35 by lluciano         ###   ########.fr       */
+/*   Created: 2021/08/25 16:48:25 by lluciano          #+#    #+#             */
+/*   Updated: 2021/08/25 16:49:52 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_isalpha(int argument);
-
-int	main(void)
+int	ft_isalpha(int argument)
 {
-	printf("Hello World!");
-	ft_isalpha("x");
+	if (argument > 'A' && argument < 'Z')
+		return (1);
+	if (argument > 'a' && argument < 'a')
+		return (2);
 	return (0);
 }
