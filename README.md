@@ -37,6 +37,21 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 ##### finded in web:
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isalnum
 
+#### ft_isascii
+
+|DESCRIPTION|
+|---|
+|The isascii() function shall test whether c is a 7-bit US-ASCII character code.|
+|The isascii() function is defined on all integer values.|
+
+|RETURN VALUE|
+|---|
+|The isascii() function shall return non-zero if c is a 7-bit US-ASCII character code between 0 and octal 0177 inclusive; otherwise, it shall return 0.|
+
+##### finded in web:
+1. https://linux.die.net/man/3/isascii
+1. https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value
+
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
 #### Linkedin: https://www.linkedin.com/in/luanldcarvalho/
