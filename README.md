@@ -20,8 +20,8 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 	|Result when uppercase alphabet is passed| 1|
 	|Result when lowercase alphabet is passed| 2|
 	|Result when non-alphabetic character is passed| 0|
-	You can get a different non-zero integer when alphabetic character is passed to isalpha() on your system. But, when you pass non-alphabetic character to isalpha(), it always returns 0.
-<br/><br/>
+
+1.	You can get a different non-zero integer when alphabetic character is passed to isalpha() on your system. But, when you pass non-alphabetic character to isalpha(), it always returns 0.
 
 ##### finded in web: https://www.programiz.com/c-programming/library-function/ctype.h/isalpha
 
