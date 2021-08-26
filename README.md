@@ -1,7 +1,8 @@
 # Libft (First project of 42)
+[My socials links](#Developed)
 ## Support material for the list
 ### Topics covered by this directory:
-1. [to compile](#TocompileinC)
+1. [To compile in C](#To)
 1. [libft](#libft)
 1. [ft_ftisalpha](#ft_isalpha)
 1. [ft_ftisdigit](#ft_isdigit)
