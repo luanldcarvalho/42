@@ -60,6 +60,16 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. http://www.w3big.com/pt/cprogramming/c-function-isprint.html
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isprint
 
+#### ft_toupper
+
+|DESCRIPTION|
+|---|
+|The toupper() function is used to convert lowercase alphabet to uppercase. i.e. If the character passed is a lowercase alphabet then the toupper() function converts a lowercase alphabet to an uppercase alphabet.|
+
+##### finded in web:
+1. https://www.geeksforgeeks.org/toupper-function-in-c/
+1. https://www.tutorialspoint.com/c_standard_library/c_function_toupper.htm
+
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
 #### Linkedin: https://www.linkedin.com/in/luanldcarvalho/
