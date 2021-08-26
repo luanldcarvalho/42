@@ -13,7 +13,7 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 	|---|---|
 	|ar|create, modify, and extract from archives|
 
-1.About ar:
+1. About ar:
 	|Suffix|Result|
 	|---|---|
 	|r|Insert the files member into archive (with replacement).|
