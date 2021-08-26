@@ -53,6 +53,13 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value
 1. https://users.pja.edu.pl/~jms/qnx/help/watcom/clibref/src/isascii.html
 
+#### ft_isprint
+
+##### finded in web:
+1. https://www.cplusplus.com/reference/cctype/isprint/
+1. http://www.w3big.com/pt/cprogramming/c-function-isprint.html
+1. https://www.programiz.com/c-programming/library-function/ctype.h/isprint
+
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
 #### Linkedin: https://www.linkedin.com/in/luanldcarvalho/
