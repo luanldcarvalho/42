@@ -1,8 +1,8 @@
 # Libft (First project of 42)
-[My socials links](#Developed)
+[My socials links](#Socials)
 ## Support material for the list
 ### Topics covered by this directory:
-1. [To compile in C](#To)
+1. [To compile in C](#To_compile)
 1. [libft](#libft)
 1. [ft_ftisalpha](#ft_isalpha)
 1. [ft_ftisdigit](#ft_isdigit)
@@ -13,7 +13,7 @@
 1. [ft_tolower](#ft_tolower)
 1. [ft_strchr](#ft_strchr)
 
-## To compile in C
+## To_compile
 Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 
 ## libft
@@ -126,6 +126,7 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. http://www.univasf.edu.br/~marcelo.linder/arquivos_iapCB/material_semestre_passado/aula19.pdf
 
 
-## Developed by Luan Carvalho.
+## Socials
+### Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
 #### Linkedin: https://www.linkedin.com/in/luanldcarvalho/
