@@ -1,6 +1,8 @@
 # Libft (First project of 42)
 ## Support material for the list
 
+[ft_ftisalpha](## ft_isalpha)
+
 ## To compile in C
 Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 
