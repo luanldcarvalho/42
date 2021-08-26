@@ -8,17 +8,15 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 
 #### libft
 ##### man ar
+1. man ar
 	|flag|Use|
 	|---|---|
 	|ar|create, modify, and extract from archives|
 
-	About ar:
+1.About ar:
 	|Suffix|Result|
 	|---|---|
-	|r|Insert the files member... into archive (with replacement). This operation differs from q in that any previously existing members are deleted if their names match those being added.
-		If one of the files named in member... does not exist, ar displays an error message, and leaves undisturbed any existing members of the archive matching that name.
-		By default, new members are added at the end of the file; but you may use one of the modifiers a, b, or i to request placement relative to some existing member.
-		The modifier v used with this operation elicits a line of output for each file inserted, along with one of the letters a or r to indicate whether the file was appended (no old member deleted) or replaced.|
+	|r|Insert the files member... into archive (with replacement). This operation differs from q in that any previously existing members are deleted if their names match those being added. If one of the files named in member... does not exist, ar displays an error message, and leaves undisturbed any existing members of the archive matching that name. By default, new members are added at the end of the file; but you may use one of the modifiers a, b, or i to request placement relative to some existing member. The modifier v used with this operation elicits a line of output for each file inserted, along with one of the letters a or r to indicate whether the file was appended (no old member deleted) or replaced.|
 	|c|Create the archive.  The specified archive is always created if it did not exist, when you request an update.  But a warning is issued unless you specify in advance that you expect to create it, by using this modifier.|
 	|s|Add an index to the archive, or update it if it already exists.  Note this command is an exception to the rule that there can only be one command letter, as it is possible to use it as either a command or a modifier.  In either case it does the same thing.|
 
