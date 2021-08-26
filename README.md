@@ -1,16 +1,16 @@
 # Libft (First project of 42)
 ## Support material for the list
 
-[to compile](#To compile in C)
-[libft](#libft)
-[ft_ftisalpha](#ft_isalpha)
-[ft_ftisdigit](#ft_isdigit)
-[ft_isalnum](#ft_isalnum)
-[ft_isascii](#ft_isascii)
-[ft_isprint](#ft_isprint)
-[ft_toupper](#ft_toupper)
-[ft_tolower](#ft_tolower)
-[ft_strchr](#ft_strchr)
+1.[to compile](#TocompileinC)
+1.[libft](#libft)
+1.[ft_ftisalpha](#ft_isalpha)
+1.[ft_ftisdigit](#ft_isdigit)
+1.[ft_isalnum](#ft_isalnum)
+1.[ft_isascii](#ft_isascii)
+1.[ft_isprint](#ft_isprint)
+1.[ft_toupper](#ft_toupper)
+1.[ft_tolower](#ft_tolower)
+1.[ft_strchr](#ft_strchr)
 
 ## To compile in C
 Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
