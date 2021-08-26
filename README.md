@@ -4,6 +4,7 @@
 ### Topics covered by this directory:
 1. [To compile in C](#To_compile)
 1. [libft](#libft)
+1. [Makefile](#Makefile)
 1. [ft_ftisalpha](#ft_isalpha)
 1. [ft_ftisdigit](#ft_isdigit)
 1. [ft_isalnum](#ft_isalnum)
@@ -37,6 +38,32 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 	|Suffix s|Add an index to the archive, or update it if it already exists.|
 	|.|Note this command is an exception to the rule that there can only be one command letter, as it is possible to use it as either a command or a modifier.|
 	|.|In either case it does the same thing.|
+
+## Makefile
+	|DESCRIPTION|
+	|---|
+	|MakeFile is a command directives file. From the moment you run the Make command it looks for a makefile in the current directory. From the moment you run the command, look for a makefile in the current directory.|
+
+	|SYNTAX|
+	|---|
+	|The standard makefile tag is all and should follow this syntax:|
+	|all: \n \tab command (Flag, two points, your command on the line underneath and indented).|
+	|You can also create another directive. Replacing 'all:' to the new name (but without deleting the 'all:' directive). And the other command becomes make name|
+
+	|EXAMPLE|DESCRIPTION|
+	|---|---|
+	|make|do all:|
+	|make name| do name:|
+
+	|VARIABLE|DESCRIPTION|
+	|---|---|
+	|NAME = arguments|NAME receive all arguments after =|
+	|$(NAME)|To call the variable NAME during the code, can use $(NAME)|
+
+	|COMMON TARGETS|DESCRIPTION
+	|---|---|
+	|run|start a program|
+	|clean|clean compiled files|
 
 ## ft_isalpha
 ##### man isalpha:
