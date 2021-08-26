@@ -70,6 +70,13 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. https://www.geeksforgeeks.org/toupper-function-in-c/
 1. https://www.tutorialspoint.com/c_standard_library/c_function_toupper.htm
 
+#### ft_toupper
+
+|DESCRIPTION|
+|---|
+|The tolower() function is used to convert uppercase alphabet to lowercase. i.e. If the character passed is a uppercase alphabet then the tolower() function converts a uppercase alphabet to an lowercase alphabet.|
+|This function is simular to ft_toupper|
+
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
 #### Linkedin: https://www.linkedin.com/in/luanldcarvalho/

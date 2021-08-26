@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/26 15:12:30 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/08/26 15:19:13 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "./ft_isascii.c"
 #include "./ft_isprint.c"
 #include "./ft_toupper.c"
+#include "./ft_tolower.c"
 
 int	ft_isalpha(int argument);
 int	ft_isdigit(int argument);
@@ -24,6 +25,7 @@ int	ft_isalnum(int argument);
 int	ft_isascii(int argument);
 int	ft_isprint(int argument);
 int	ft_toupper(int argument);
+int	ft_tolower(int argument);
 
 /* isalpha
 int	main(void)
@@ -117,6 +119,7 @@ int	main(void)
 	return (0);
 }
 */
+/* toupper
 int	main(void)
 {
 	int	argument;
@@ -146,5 +149,37 @@ int	main(void)
 		printf ("\n%d (%c) is not a lower case", argument, argument);
 	else
 		printf ("\n%d (%c) after to upper is >> %c", argument, argument, result);
+	return (0);
+}
+*/
+int	main(void)
+{
+	int	argument;
+	int	result;
+
+	argument = '5';
+	result = ft_tolower(argument);
+	if (result == 0)
+		printf ("\n%d (%c) is not a upper case", argument, argument);
+	else
+		printf ("\n%d (%c) after to lower is >> %c", argument, argument, result);
+	argument = 'a';
+	result = ft_tolower(argument);
+	if (result == 0)
+		printf ("\n%d (%c) is not a upper case", argument, argument);
+	else
+		printf ("\n%d (%c) after to lower is >> %c", argument, argument, result);
+	argument = 'B';
+	result = ft_tolower(argument);
+	if (result == 0)
+		printf ("\n%d (%c) is not a upper case", argument, argument);
+	else
+		printf ("\n%d (%c) after to lower is >> %c", argument, argument, result);
+	argument = 0x800;
+	result = ft_tolower(argument);
+	if (result == 0)
+		printf ("\n%d (%c) is not a upper case", argument, argument);
+	else
+		printf ("\n%d (%c) after to lower is >> %c", argument, argument, result);
 	return (0);
 }
