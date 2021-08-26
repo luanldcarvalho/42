@@ -1,12 +1,10 @@
-# Libft
-## First project of 42
+# Libft (First project of 42)
+## Support material for the list
 
-### Suport material
-
-#### To compile in C
+## To compile in C
 Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 
-#### libft
+## libft
 ##### man ar
 1. man ar
 	|flag|Use|
@@ -16,19 +14,19 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. About ar:
 	|Suffix|Result|
 	|---|---|
-	|r|Insert the files member into archive (with replacement).|
+	|Suffix r|Insert the files member into archive (with replacement).|
 	|...|This operation differs from q in that any previously existing members are deleted if their names match those being added.|
 	|...|If one of the files named in member does not exist, ar displays an error message, and leaves undisturbed any existing members of the archive matching that name.|
 	|...|By default, new members are added at the end of the file; but you may use one of the modifiers a, b, or i to request placement relative to some existing member.|
 	|...|The modifier v used with this operation elicits a line of output for each file inserted, along with one of the letters a or r to indicate whether the file was appended (no old member deleted) or replaced.|
-	|c|Create the archive.|
+	|Suffix c|Create the archive.|
 	|...|The specified archive is always created if it did not exist, when you request an update.|
 	|...|But a warning is issued unless you specify in advance that you expect to create it, by using this modifier.|
-	|s|Add an index to the archive, or update it if it already exists.|
+	|Suffix s|Add an index to the archive, or update it if it already exists.|
 	|...|Note this command is an exception to the rule that there can only be one command letter, as it is possible to use it as either a command or a modifier.|
 	|...|In either case it does the same thing.|
 
-#### ft_isalpha
+## ft_isalpha
 ##### man isalpha:
 1.	Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c));
 1.	The values returned are nonzero if the character c falls into the tested class, and zero if not.
@@ -48,18 +46,18 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 ##### finded in web
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isalpha
 
-#### ft_isdigit
-
+## ft_isdigit
+1. Checks for an number digit. 0,1,2,3,4,5,6,7,8 ou 9.
 ##### finded in web:
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isdigit
 2. https://www.ime.usp.br/~pf/algoritmos/apend/ctype.h.html
 
-#### ft_isalnum
-
+## ft_isalnum
+1. Checks for an alphabetic character or a number. '0' to '9', 'A' to 'Z' and 'a' to 'z'
 ##### finded in web:
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isalnum
 
-#### ft_isascii
+## ft_isascii
 
 |DESCRIPTION|
 |---|
@@ -75,14 +73,14 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value
 1. https://users.pja.edu.pl/~jms/qnx/help/watcom/clibref/src/isascii.html
 
-#### ft_isprint
+## ft_isprint
 
 ##### finded in web:
 1. https://www.cplusplus.com/reference/cctype/isprint/
 1. http://www.w3big.com/pt/cprogramming/c-function-isprint.html
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isprint
 
-#### ft_toupper
+## ft_toupper
 
 |DESCRIPTION|
 |---|
@@ -92,14 +90,14 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. https://www.geeksforgeeks.org/toupper-function-in-c/
 1. https://www.tutorialspoint.com/c_standard_library/c_function_toupper.htm
 
-#### ft_toupper
+## ft_tolower
 
 |DESCRIPTION|
 |---|
 |The tolower() function is used to convert uppercase alphabet to lowercase. i.e. If the character passed is a uppercase alphabet then the tolower() function converts a uppercase alphabet to an lowercase alphabet.|
 |This function is simular to ft_toupper|
 
-#### ft_strchr
+## ft_strchr
 
 |DESCRIPTION|
 |---|
