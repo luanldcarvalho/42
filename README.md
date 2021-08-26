@@ -6,6 +6,22 @@
 #### To compile in C
 Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 
+#### libft
+##### man ar
+	|flag|Use|
+	|---|---|
+	|ar|create, modify, and extract from archives|
+
+	About ar:
+	|Suffix|Result|
+	|---|---|
+	|r|Insert the files member... into archive (with replacement). This operation differs from q in that any previously existing members are deleted if their names match those being added.
+		If one of the files named in member... does not exist, ar displays an error message, and leaves undisturbed any existing members of the archive matching that name.
+		By default, new members are added at the end of the file; but you may use one of the modifiers a, b, or i to request placement relative to some existing member.
+		The modifier v used with this operation elicits a line of output for each file inserted, along with one of the letters a or r to indicate whether the file was appended (no old member deleted) or replaced.|
+	|c|Create the archive.  The specified archive is always created if it did not exist, when you request an update.  But a warning is issued unless you specify in advance that you expect to create it, by using this modifier.|
+	|s|Add an index to the archive, or update it if it already exists.  Note this command is an exception to the rule that there can only be one command letter, as it is possible to use it as either a command or a modifier.  In either case it does the same thing.|
+
 #### ft_isalpha
 ##### man isalpha:
 1.	Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c));
@@ -76,6 +92,19 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 |---|
 |The tolower() function is used to convert uppercase alphabet to lowercase. i.e. If the character passed is a uppercase alphabet then the tolower() function converts a uppercase alphabet to an lowercase alphabet.|
 |This function is simular to ft_toupper|
+
+#### ft_strchr
+
+|DESCRIPTION|
+|---|
+|This returns a pointer to the first occurrence of the character c in the string str, or NULL if the character is not found.|
+
+##### finded in web:
+1. https://man7.org/linux/man-pages/man3/strchr.3.html
+1. https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm
+1. http://www.w3big.com/pt/cprogramming/c-function-strchr.html
+1. http://www.univasf.edu.br/~marcelo.linder/arquivos_iapCB/material_semestre_passado/aula19.pdf
+
 
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
