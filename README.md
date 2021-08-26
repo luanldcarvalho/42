@@ -51,6 +51,7 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 ##### finded in web:
 1. https://linux.die.net/man/3/isascii
 1. https://www.ibm.com/docs/en/i/7.3?topic=functions-isascii-test-character-representable-as-ascii-value
+1. https://users.pja.edu.pl/~jms/qnx/help/watcom/clibref/src/isascii.html
 
 ## Developed by Luan Carvalho.
 #### GitHub: https://github.com/luanldcarvalho
