@@ -5,18 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 13:46:08 by lluciano         ###   ########.fr       */
+/*   Created: 2021/08/30 13:41:48 by lluciano          #+#    #+#             */
+/*   Updated: 2021/08/30 13:41:49 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+int	main(void)
 {
-   char ch[]={'g', 'e', 'e', 'k', 's', '\0'};
+	int argument;
+	int result;
 
-   printf("The string is: %s .Length of string is: %d",ch, strlen(ch));
+	argument = '5';
+	result = ft_isalnum(argument);
+	printf("When %d is passed, return value is %d\n", argument, result);
 
- return 0;
+	argument = 'Q';
+	result = ft_isalnum(argument);
+	printf("When %d is passed, return value is %d\n", argument, result);
+
+	argument = 'l';
+	result = ft_isalnum(argument);
+	printf("When %d is passed, return value is %d\n", argument, result);
+
+	argument = '+';
+	result = ft_isalnum(argument);
+	printf("When %d is passed, return value is %d\n", argument, result);
+
+	return (0);
 }

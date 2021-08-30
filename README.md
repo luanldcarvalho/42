@@ -40,47 +40,47 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 	|.|In either case it does the same thing.|
 
 ## Makefile
-	|DESCRIPTION|
-	|---|
-	|MakeFile is a command directives file. From the moment you run the Make command it looks for a makefile in the current directory. From the moment you run the command, look for a makefile in the current directory.|
+|DESCRIPTION|
+|---|
+|MakeFile is a command directives file. From the moment you run the Make command it looks for a makefile in the current directory. From the moment you run the command, look for a makefile in the current directory.|
 
-	|SYNTAX|
-	|---|
-	|The standard makefile tag is all and should follow this syntax:|
-	|all: \n \tab command (Flag, two points, your command on the line underneath and indented).|
-	|You can also create another directive. Replacing 'all:' to the new name (but without deleting the 'all:' directive). And the other command becomes make name|
+|SYNTAX|
+|---|
+|The standard makefile tag is all and should follow this syntax:|
+|all: \n \tab command (Flag, two points, your command on the line underneath and indented).|
+|You can also create another directive. Replacing 'all:' to the new name (but without deleting the 'all:' directive). And the other command becomes make name|
 
-	|EXAMPLE|DESCRIPTION|
-	|---|---|
-	|make|do all:|
-	|make name| do name:|
+|EXAMPLE|DESCRIPTION|
+|---|---|
+|make|do all:|
+|make name| do name:|
 
-	|VARIABLE|DESCRIPTION|
-	|---|---|
-	|NAME = arguments|NAME receive all arguments after =|
-	|$(NAME)|To call the variable NAME during the code, can use $(NAME)|
+|VARIABLE|DESCRIPTION|
+|---|---|
+|NAME = arguments|NAME receive all arguments after =|
+|$(NAME)|To call the variable NAME during the code, can use $(NAME)|
 
-	|COMMON TARGETS|DESCRIPTION
-	|---|---|
-	|run|start a program|
-	|clean|clean compiled files|
+|COMMON TARGETS|DESCRIPTION
+|---|---|
+|run|start a program|
+|clean|clean compiled files|
 
 ## ft_isalpha
 ##### man isalpha:
-	|DESCRIPTION|
-	|---|
-	|Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c));|
+|DESCRIPTION|
+|---|
+|Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c));|
 1.	The values returned are nonzero if the character c falls into the tested class, and zero if not.
-	|RETURN VALUE|REMARKS|
-	|---|---|
-	|Zero (0)|If the parameter isn't an alphabet.|
-	|Non zero number|If the parameter is an alphabet.|
+|RETURN VALUE|REMARKS|
+|---|---|
+|Zero (0)|If the parameter isn't an alphabet.|
+|Non zero number|If the parameter is an alphabet.|
 1.	Output:
-	|Result when ...|Return|
-	|---|---|
-	|Result when uppercase alphabet is passed| 1|
-	|Result when lowercase alphabet is passed| 2|
-	|Result when non-alphabetic character is passed| 0|
+|Result when ...|Return|
+|---|---|
+|Result when uppercase alphabet is passed| 1|
+|Result when lowercase alphabet is passed| 2|
+|Result when non-alphabetic character is passed| 0|
 
 1.	You can get a different non-zero integer when alphabetic character is passed to isalpha() on your system. But, when you pass non-alphabetic character to isalpha(), it always returns 0.
 
@@ -88,18 +88,17 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isalpha
 
 ## ft_isdigit
-	|DESCRIPTION|
-	|---|
-	|Checks for an number digit. 0,1,2,3,4,5,6,7,8 ou 9|
+|DESCRIPTION|
+|---|
+|Checks for an number digit. 0,1,2,3,4,5,6,7,8 ou 9|
 ##### finded in web:
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isdigit
 2. https://www.ime.usp.br/~pf/algoritmos/apend/ctype.h.html
 
 ## ft_isalnum
-
-	|DESCRIPTION|
-	|---|
-	|Checks for an alphabetic character or a number. '0' to '9', 'A' to 'Z' and 'a' to 'z'|
+|DESCRIPTION|
+|---|
+|Checks for an alphabetic character or a number. '0' to '9', 'A' to 'Z' and 'a' to 'z'|
 ##### finded in web:
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isalnum
 
@@ -152,6 +151,31 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. http://www.w3big.com/pt/cprogramming/c-function-strchr.html
 1. http://www.univasf.edu.br/~marcelo.linder/arquivos_iapCB/material_semestre_passado/aula19.pdf
 
+## strncmp
+|DESCRIPTION|
+|---|
+|Compare string1 and string2 for n times.|
+
+|RETURN VALUE|DESCRIPTION|
+|---|---|
+|< 0|then it indicates str1 is less than str2.|
+|0|then it indicates str1 is equal to str2.|
+|> 0|then it indicates str2 is less than str1.|
+
+#### finded in web:
+1. https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm
+
+## strlen
+|DESCRIPTION|
+|---|
+|The length of a C string is determined by the terminating null-character: A C string is as long as the number of characters between the beginning of the string and the terminating null character (without including the terminating null character itself).|
+
+#### finded in web:
+1. https://www.cplusplus.com/reference/cstring/strlen/
+1. https://www.geeksforgeeks.org/strlen-function-in-c/#:~:text=The%20strlen()%20function%20calculates,null%20character%20'%5C0'.
+
+## Others_References
+1. https://github.com/pbie42/libft42commented
 
 ## Socials
 ### Developed by Luan Carvalho.

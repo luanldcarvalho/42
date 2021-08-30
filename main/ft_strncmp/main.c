@@ -5,18 +5,37 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 13:46:08 by lluciano         ###   ########.fr       */
+/*   Created: 2021/08/30 13:45:41 by lluciano          #+#    #+#             */
+/*   Updated: 2021/08/30 13:45:51 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+int main ()
 {
-   char ch[]={'g', 'e', 'e', 'k', 's', '\0'};
+	char str1[15];
+	char str2[15];
+	int ret;
 
-   printf("The string is: %s .Length of string is: %d",ch, strlen(ch));
 
- return 0;
+	strcpy(str1, "abcdef");
+	strcpy(str2, "ABCDEF");
+
+	ret = strcmp(str1, str2);
+
+
+	if(ret < 0) {
+		printf("str1 is less than str2");
+	} else if(ret > 0) {
+		printf("str2 is less than str1");
+	} else {
+		printf("str1 is equal to str2");
+	}
+
+	return(0);
 }
+
+/*if Return value < 0 then it indicates str1 is less than str2.
+* if Return value > 0 then it indicates str2 is less than str1.
+* if Return value = 0 then it indicates str1 is equal to str2.*/

@@ -5,18 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 13:46:08 by lluciano         ###   ########.fr       */
+/*   Created: 2021/08/30 13:40:26 by lluciano          #+#    #+#             */
+/*   Updated: 2021/08/30 13:40:27 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+int	main(void)
 {
-   char ch[]={'g', 'e', 'e', 'k', 's', '\0'};
+	int	res;
 
-   printf("The string is: %s .Length of string is: %d",ch, strlen(ch));
-
- return 0;
+	res = ft_isalpha(100);
+	printf("Hello World!");
+	printf("%d", res);
+	return (0);
 }
+

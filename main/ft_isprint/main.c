@@ -5,18 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 13:46:08 by lluciano         ###   ########.fr       */
+/*   Created: 2021/08/30 13:43:17 by lluciano          #+#    #+#             */
+/*   Updated: 2021/08/30 13:43:23 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+int	main(void)
 {
-   char ch[]={'g', 'e', 'e', 'k', 's', '\0'};
+	int	argument;
 
-   printf("The string is: %s .Length of string is: %d",ch, strlen(ch));
-
- return 0;
+	argument = '5';
+	if (ft_isprint(argument) == 0)
+		printf ("\n%d is not a print value", argument);
+	else
+		printf ("\n%d is a print value", argument);
+	argument = 0x800;
+	if (ft_isprint(argument) == 0)
+		printf ("\n%d is not a print value", argument);
+	else
+		printf ("\n%d is a print value", argument);
+	return (0);
 }
