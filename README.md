@@ -166,7 +166,7 @@
 1. https://www.cplusplus.com/reference/cstring/strlen/
 1. https://www.geeksforgeeks.org/strlen-function-in-c/#:~:text=The%20strlen()%20function%20calculates,null%20character%20'%5C0'.
 
-## memset
+## ft_memset
 |DESCRIPTION|
 |---|
 |The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c.|
@@ -179,10 +179,7 @@
 1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/memset-wmemset?view=msvc-160
 1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
 
-#### finded in web:
-1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
-
-## strncmp
+## ft_strncmp
 |DESCRIPTION|
 |---|
 |Compare string1 and string2 for n times.|
