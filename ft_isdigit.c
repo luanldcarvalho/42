@@ -6,9 +6,11 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 17:42:43 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/25 19:07:28 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/08/30 17:42:48 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int argument)
 {
