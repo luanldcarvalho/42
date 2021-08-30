@@ -15,7 +15,8 @@
 1. [ft_strchr](#ft_strchr)
 
 ## To_compile
-Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
+1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
+1. General about C: https://www.youtube.com/watch?v=VnH7OVFj_pA&list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW
 
 ## libft
 ##### man ar
@@ -69,7 +70,7 @@ Youtube: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 ##### man isalpha:
 |DESCRIPTION|
 |---|
-|Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c));|
+|Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) or islower(c));|
 1.	The values returned are nonzero if the character c falls into the tested class, and zero if not.
 |RETURN VALUE|REMARKS|
 |---|---|
