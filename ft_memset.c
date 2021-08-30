@@ -6,9 +6,11 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 15:33:48 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 17:38:26 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/08/30 17:42:59 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *str1, int c, size_t n)
 {
