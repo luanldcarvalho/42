@@ -17,6 +17,7 @@
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. General about C: https://www.youtube.com/watch?v=VnH7OVFj_pA&list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW
+1. size_t: https://www.tutorialspoint.com/size-t-data-type-in-c#:~:text=The%20datatype%20size_t%20is%20unsigned,It%20can%20never%20be%20negative.
 
 ## libft
 ##### man ar
@@ -161,7 +162,25 @@
 |---|
 |The strlen() function returns the number of bytes in the string pointed to by string.|
 
+#### finded in web:
+1. https://www.cplusplus.com/reference/cstring/strlen/
+1. https://www.geeksforgeeks.org/strlen-function-in-c/#:~:text=The%20strlen()%20function%20calculates,null%20character%20'%5C0'.
+
 ## memset
+|DESCRIPTION|
+|---|
+|The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c.|
+
+|RETURN VALUE|
+|---|
+|The memset() function returns a pointer to the memory area s.|
+
+#### finded in web:
+1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/memset-wmemset?view=msvc-160
+1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
+
+#### finded in web:
+1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
 
 ## strncmp
 |DESCRIPTION|
@@ -176,10 +195,6 @@
 
 #### finded in web:
 1. https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm
-
-#### finded in web:
-1. https://www.cplusplus.com/reference/cstring/strlen/
-1. https://www.geeksforgeeks.org/strlen-function-in-c/#:~:text=The%20strlen()%20function%20calculates,null%20character%20'%5C0'.
 
 ## Others_References
 1. https://github.com/pbie42/libft42commented

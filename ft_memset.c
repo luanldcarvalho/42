@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 15:35:41 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 16:25:55 by lluciano         ###   ########.fr       */
+/*   Created: 2021/08/30 15:33:48 by lluciano          #+#    #+#             */
+/*   Updated: 2021/08/30 16:26:50 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	main(void)
+void	*ft_memset(char *str, int c, size_t n)
 {
-	char	*buffer;
+	int		index;
 
-	buffer = "This is a test of the memset function";
-	printf("Before: %s\n", buffer);
-	ft_memset(buffer, '+', 4);
-	printf("After:  %s\n", buffer);
+	index = 0;
+	while(index < n)
+	{
+		str[index] = c;
+		index ++;
+	}
 }
+
