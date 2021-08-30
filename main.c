@@ -6,17 +6,19 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 16:48:34 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 13:46:08 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/08/30 15:24:40 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main()
+int	main(void)
 {
-   char ch[]={'g', 'e', 'e', 'k', 's', '\0'};
+	char	*teste;
 
-   printf("The string is: %s .Length of string is: %d",ch, strlen(ch));
-
- return 0;
+	char	ch[] = {'t', 'e', 's', 't', 'e', '\0'};
+	printf("\nThe string is: %s .Length of string is: %ld\n", ch, strlen(ch));
+	teste = "testando";
+	printf("\nThe string is: %s .Length of string is: %ld\n", ch, strlen(teste));
+	return (0);
 }
