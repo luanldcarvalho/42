@@ -6,11 +6,11 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 13:17:58 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 13:30:20 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/08/30 15:15:17 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	strlen(char *str)
+size_t	strlen(const char *str)
 {
 	int	index;
 
