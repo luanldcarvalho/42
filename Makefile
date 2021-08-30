@@ -5,7 +5,6 @@ FILES = ft_isalpha.c \
 		ft_isprint.c \
 		ft_toupper.c \
 		ft_tolower.c \
-		ft_strncmp.c \
 		ft_strlen.c \
 CFLAGS = -Wall -Wextra -Werror
 OBJECTS = $(FILES:.c=.o)#Make a .o for each .c

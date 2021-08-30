@@ -12,7 +12,7 @@
 1. [ft_isprint](#ft_isprint)
 1. [ft_toupper](#ft_toupper)
 1. [ft_tolower](#ft_tolower)
-1. [ft_strchr](#ft_strchr)
+1. [ft_strlen](#ft_strlen)
 
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
@@ -152,6 +152,17 @@
 1. http://www.w3big.com/pt/cprogramming/c-function-strchr.html
 1. http://www.univasf.edu.br/~marcelo.linder/arquivos_iapCB/material_semestre_passado/aula19.pdf
 
+## ft_strlen
+|DESCRIPTION|
+|---|
+|The length of a C string is determined by the terminating null-character: A C string is as long as the number of characters between the beginning of the string and the terminating null character (without including the terminating null character itself).|
+
+|RETURN VALUE|
+|---|
+|The strlen() function returns the number of bytes in the string pointed to by string.|
+
+## memset
+
 ## strncmp
 |DESCRIPTION|
 |---|
@@ -165,15 +176,6 @@
 
 #### finded in web:
 1. https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm
-
-## strlen
-|DESCRIPTION|
-|---|
-|The length of a C string is determined by the terminating null-character: A C string is as long as the number of characters between the beginning of the string and the terminating null character (without including the terminating null character itself).|
-
-|RETURN VALUE|
-|---|
-|The strlen() function returns the number of bytes in the string pointed to by string.|
 
 #### finded in web:
 1. https://www.cplusplus.com/reference/cstring/strlen/
