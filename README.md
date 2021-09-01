@@ -178,6 +178,7 @@
 #### finded in web:
 1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/memset-wmemset?view=msvc-160
 1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
+1. https://www.vivaolinux.com.br/artigo/Ponteiros-void-na-linguagem-C
 
 ## ft_strncmp
 |DESCRIPTION|
