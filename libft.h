@@ -11,6 +11,8 @@
 #include "./ft_tolower.c"
 #include "./ft_strlen.c"
 #include "./ft_memset.c"
+#include "./ft_bzero.c"
+#include "./ft_memcpy.c"
 
 int		ft_isalpha(int argument);
 int		ft_isdigit(int argument);
@@ -21,5 +23,7 @@ int		ft_toupper(int argument);
 int		ft_tolower(int argument);
 size_t	strlen(const char *str);
 void	*memset(char *str, int c, size_t n);
+void	bzero(void *s, size_t n);
+void	*memcpy(void *dest, const void *src, size_t n);
 
 #endif

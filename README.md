@@ -13,6 +13,9 @@
 1. [ft_toupper](#ft_toupper)
 1. [ft_tolower](#ft_tolower)
 1. [ft_strlen](#ft_strlen)
+1. [ft_memset](#ft_memset)
+1. [ft_bzero](#ft_bzero)
+1. [ft_memscpy](#ft_memcpy)
 
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
@@ -179,6 +182,29 @@
 1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/memset-wmemset?view=msvc-160
 1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
 1. https://www.vivaolinux.com.br/artigo/Ponteiros-void-na-linguagem-C
+
+## ft_bzero
+|DESCRIPTION|
+|---|
+|The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.|
+|The explicit_bzero() function performs the same task as bzero().  It differs from bzero() in that it guarantees that compiler optimizations will not remove the erase operation if the compiler deduces that the operation is "unnecessary".|
+
+|RETURN VALUE|
+|---|
+|None|
+
+#### finded in web:
+1. https://man7.org/linux/man-pages/man3/bzero.3.html
+1. https://pubs.opengroup.org/onlinepubs/009695399/functions/bzero.html
+
+## ft_memcpy
+|DESCRIPTION|
+|---|
+|The memcpy() function copies n bytes from memory area src to memory area dest.  The memory areas must not overlap.  Use memmove(3) if the memory areas do overlap.|
+
+|RETURN VALUE|
+|---|
+|The memcpy() function returns a pointer to dest.|
 
 ## ft_strncmp
 |DESCRIPTION|
