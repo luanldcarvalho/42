@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 15:35:41 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/01 20:10:00 by lluciano         ###   ########.fr       */
+/*   Created: 2021/09/01 19:57:13 by lluciano          #+#    #+#             */
+/*   Updated: 2021/09/01 20:07:59 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h> //excluir antes de finalizar
 
+void *memchr(const void *s, int c, size_t n)
+{
+	unsigned char	*string;
+	unsigned char	ch;
 
-int main () {
-	const char str[] = "http://www.github.com/luanldcarvalho/";
-	const char ch = '.';
-	char *ret;
-
-	printf("String full is - |%s|\n", str);
-	ret = memchr(str, ch, strlen(str));
-	printf("String after |%c| is - |%s|\n", ch, ret);
-	return(0);
+	string = (unsigned char *)s;
+	ch = (unsigned char)c;
+	while (n > 0)
+	{
+		if (*string == ch)
+			return (string);
+		*string++;
+		n--;
+	}
+	return (NULL);
 }

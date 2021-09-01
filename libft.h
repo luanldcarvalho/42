@@ -16,6 +16,7 @@
 #include "./ft_bzero.c"
 #include "./ft_memcpy.c"
 #include "./ft_memmove.c"
+#include "./ft_memchr.c"
 
 int		ft_isalpha(int argument);
 int		ft_isdigit(int argument);
@@ -29,5 +30,6 @@ void	*memset(void *s, int c, size_t n);
 void	bzero(void *s, size_t n);
 void	*memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*memchr(const void *s, int c, size_t n);
 
 #endif
