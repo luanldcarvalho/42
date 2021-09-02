@@ -22,6 +22,7 @@
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
 1. General about C: https://www.youtube.com/watch?v=VnH7OVFj_pA&list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW
 1. size_t: https://www.tutorialspoint.com/size-t-data-type-in-c#:~:text=The%20datatype%20size_t%20is%20unsigned,It%20can%20never%20be%20negative.
+1. Casting: https://www.ime.usp.br/~pf/algoritmos/aulas/footnotes/cast.html
 
 ## libft
 ##### man ar
@@ -105,6 +106,10 @@
 |DESCRIPTION|
 |---|
 |Checks for an alphabetic character or a number. '0' to '9', 'A' to 'Z' and 'a' to 'z'|
+|RETURN VALUE|
+|---|
+|The values returned are nonzero if the character c falls into the tested class, and zero if not.|
+
 ##### finded in web:
 1. https://www.programiz.com/c-programming/library-function/ctype.h/isalnum
 
