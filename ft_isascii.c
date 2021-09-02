@@ -6,15 +6,15 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 19:33:31 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 17:42:36 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/02 12:07:33 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int argument)
+int	ft_isascii(int c)
 {
-	if (argument >= 0 && argument <= 255)
+	if (c >= 0 && c <= 255)
 		return (1);
 	return (0);
 }
