@@ -6,15 +6,15 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 17:42:43 by lluciano          #+#    #+#             */
-/*   Updated: 2021/08/30 17:42:48 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/01 21:03:49 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int argument)
+int	ft_isdigit(int c)
 {
-	if (argument >= '1' && argument <= '9')
+	if (c >= '1' && c <= '9')
 		return (1);
 	return (0);
 }
