@@ -17,6 +17,7 @@
 1. [ft_bzero](#ft_bzero)
 1. [ft_memscpy](#ft_memcpy)
 1. [ft_memmove](#ft_memmove)
+1. [ft_memchr](#ft_memchar)
 
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
@@ -258,6 +259,19 @@
 1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/memcmp-wmemcmp?view=msvc-160
 1. https://www.techonthenet.com/c_language/standard_library_functions/string_h/memcmp.php
 
+## ft_strchr
+|DESCRIPTION|
+|---|
+|The strchr() function returns a pointer to the first occurrence of the character c in the string s.|
+
+|RETURN VALUE|
+|---|
+|The strchr() function return a pointer to the matched character or NULL if the character is not found. The terminating null byte is considered part of the string, so that if c is specified as '\0', these functions return a pointer to the terminator.|
+
+#### finded in web:
+1. https://www.tutorialspoint.com/c_standard_library/c_function_strchr.htm
+1. http://www.w3big.com/pt/cprogramming/c-function-strchr.html
+1. https://stackoverflow.com/questions/8618413/why-i-get-returning-const-char-from-a-function-with-result-type-char-discar
 
 ## ft_strncmp
 |DESCRIPTION|
