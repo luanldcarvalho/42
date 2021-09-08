@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 15:50:20 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 12:08:37 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/08 12:25:40 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,7 @@ char	*ft_strchr(const char *s, int c)
 			return(&str[i]);
 		i++;
 	}
+	if (c == '\0')
+		return(&str[i]);
 	return (NULL);
 }
