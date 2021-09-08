@@ -6,39 +6,32 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 20:49:41 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/01 20:49:42 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/06 11:01:51 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
+/*int memcmp(const void *s1, const void *s2, size_t n);*/
 
-int main(int argc, const char * argv[])
+ int main (void)
 {
-	/* Create a place to store our results */
-	int result;
+	char str1[15];
+	char str2[15];
+	int ret;
 
-	/* Create two arrays to hold our data */
-	char example1[50];
-	char example2[50];
+	memcpy(str1, "abcdefm", 7);
+	memcpy(str2, "abcdeff", 7);
 
-	/* Copy two strings into our data arrays
-	(These can be any data and do not have to be strings) */
-	strcpy(example1, "C memcmp at TechOnTheNet.com");
-	strcpy(example2, "C memcmp is a memory compare function");
+	ret = ft_memcmp(str1, str2, 7);
 
-	/* Compare the two strings provided up to the first 9 characters */
-	result = memcmp(example1, example2, 9);
+	if(ret > 0) {
+		printf("%d", ret);
+	} else if(ret < 0) {
+		printf("%d", ret);
+	} else {
+		printf("%d", ret);
+	}
 
-	/* If the two arrays are the same say so */
-	if (result == 0) printf("Arrays are the same\n");
-
-	/* Compare the two strings provided up to the first 10 characters */
-	result = memcmp(example1, example2, 10);
-
-	/* If the first array is less than the second say so
-	(This is because the 'a' in the word 'at' is less than
-	the 'i' in the word 'is' */
-	if (result < 0) printf("Second array is less than the first\n");
-
-	return 0;
+	return(0);
 }
