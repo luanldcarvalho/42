@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 15:50:20 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 11:58:17 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/08 12:08:37 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char			*str;
-	unsigned int	i;
-	unsigned int	leng_s;
+	char	*str;
+	int		i;
+	int		leng_s;
 
 	str = (char *)s;
 	i = 0;
