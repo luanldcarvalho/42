@@ -6,13 +6,13 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 13:44:50 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 12:19:49 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/08 12:29:15 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
-/*void *memchr(const void *s, int c, size_t n);*/
+/*char	*ft_strchr(const char *s, int c);*/
 
 int	main(void)
 {
