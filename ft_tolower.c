@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 15:16:29 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/02 12:19:29 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/08 17:25:15 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
-	return (0);
+	return (c);
 }

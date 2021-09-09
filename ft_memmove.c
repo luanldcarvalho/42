@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 13:56:58 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/01 19:48:00 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/08 17:34:23 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	free (memory);
 	return (dest);
 }
-

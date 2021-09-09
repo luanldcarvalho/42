@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 14:41:49 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 15:54:11 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/08 17:37:15 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		b++;
 		size--;
 	}
-	/*(size == 0 || src[b] == '\0'*/
 	dst[i] = '\0';
-	return(i);
+	return (i);
 }
+/*line31: (size == 0 || src[b] == '\0'*/

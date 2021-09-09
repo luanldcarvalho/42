@@ -328,6 +328,15 @@
 1. https://en.wikibooks.org/wiki/C_Programming/C_Reference/nonstandard/strlcpy
 1. bsd/string (sudo apt-get install  libbsd-dev): https://stackoverflow.com/questions/24484007/cannot-install-opendkim-because-cannot-find-bsd-string-h
 
+## ft_strnstr
+|DESCRIPTION|
+|---|
+|The strnstr() function locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched.  Characters that appear after a ‘\0’ character are not searched.  Since the strnstr() function is a FreeBSD specific API, it should only be used when portability is not a concern.|
+
+|RETURN VALUE|DESCRIPTION|
+|---|---|
+|If little is an empty string, big is returned; if little occurs nowhere in big, NULL is returned; otherwise a pointer to the first character of the first occurrence of little is returned.|
+
 ## Others_References
 1. https://github.com/pbie42/libft42commented
 

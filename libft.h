@@ -4,6 +4,7 @@
 #include <stdio.h> //excluir antes de finalizar
 #include <string.h> //excluir antes de finalizar
 #include <stdlib.h> //Okay
+/*
 #include "./ft_isalpha.c" //Okay
 #include "./ft_isdigit.c" //Okay
 #include "./ft_isalnum.c" //Okay
@@ -23,7 +24,8 @@
 #include "./ft_strncmp.c" //Okay
 #include "./ft_strlcpy.c" //Okay
 #include "./ft_strlcat.c" //Okay
-
+#include "./ft_strnstr.c" //Okay
+*/
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -43,5 +45,6 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 #endif

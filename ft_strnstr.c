@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/08 13:00:51 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 17:37:05 by lluciano         ###   ########.fr       */
+/*   Created: 2021/09/08 16:02:06 by lluciano          #+#    #+#             */
+/*   Updated: 2021/09/08 17:15:24 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	i;
+	int	i;
+	int	l;
 
 	i = 0;
-	while (i < size)
+	l = ft_strlen(little);
+	if (*little == 0)
+		return ((char *)big);
+	while (big[i] != 0 && len > 0)
 	{
-		dst[i] = src[i];
 		i++;
+		while (big[i] == little[i])
+		{
+			i++;
+			if (*little == '\0')
+			{
+				i = i - l;
+				return ((char *)big);
+			}
+		}
 	}
-	dst[i] = '\0';
-	return (ft_strlen(src));
+	return (NULL);
 }
-/*line24 (size == 0 || size > ft_strlen(src))*/
