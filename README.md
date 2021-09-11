@@ -30,6 +30,12 @@
 1. size_t: https://www.tutorialspoint.com/size-t-data-type-in-c#:~:text=The%20datatype%20size_t%20is%20unsigned,It%20can%20never%20be%20negative.
 1. Casting: https://www.ime.usp.br/~pf/algoritmos/aulas/footnotes/cast.html
 
+#### Others_References
+1. https://github.com/pbie42/libft42commented
+1. https://github.com/jtoty/Libftest
+1. Is Printable Characters: http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm
+1. ASCII Table: https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm
+
 ## libft
 
 |DESCRIPTION|
@@ -321,6 +327,12 @@
 |---|
 |The strlcpy() and strlcat() functions return the total length of the string they tried to create. For strlcpy() that means the length of src. For strlcat() that means the initial length of dst plus the length of src. While this may seem somewhat confusing, it was done to make truncation detection simple.|
 
+#### finded in web:
+1. https://linux.die.net/man/3/strlcpy
+1. https://www.sudo.ws/todd/papers/strlcpy.html
+1. https://en.wikibooks.org/wiki/C_Programming/C_Reference/nonstandard/strlcpy
+1. bsd/string (sudo apt-get install  libbsd-dev): https://stackoverflow.com/questions/24484007/cannot-install-opendkim-because-cannot-find-bsd-string-h
+
 ## ft_strlcat
 |DESCRIPTION|
 |---|
@@ -331,12 +343,6 @@
 |---|
 |The strlcat() function appends the NUL-terminated string src to the end of dst. It will append at most size - strlen(dst) - 1 bytes, NUL-terminating the result.|
 
-#### finded in web:
-1. https://linux.die.net/man/3/strlcpy
-1. https://www.sudo.ws/todd/papers/strlcpy.html
-1. https://en.wikibooks.org/wiki/C_Programming/C_Reference/nonstandard/strlcpy
-1. bsd/string (sudo apt-get install  libbsd-dev): https://stackoverflow.com/questions/24484007/cannot-install-opendkim-because-cannot-find-bsd-string-h
-
 ## ft_strnstr
 |DESCRIPTION|
 |---|
@@ -346,9 +352,23 @@
 |---|---|
 |If little is an empty string, big is returned; if little occurs nowhere in big, NULL is returned; otherwise a pointer to the first character of the first occurrence of little is returned.|
 
-## Others_References
-1. https://github.com/pbie42/libft42commented
-1. https://github.com/jtoty/Libftest
+## ft_atoi
+
+|DESCRIPTION|
+|---|
+|The atoi() function converts the initial portion of the string pointed to by nptr to int.  The behavior is the same as strtol(nptr, NULL, 10); except that atoi() does not detect errors.|
+|The atol() and atoll() functions behave the same as atoi(), except that they convert the initial portion of the string to their return type of long or long long.|
+
+|RETURN VALUE|
+|---|
+|The converted value.|
+
+#### finded in web:
+1. https://www.tutorialspoint.com/c_standard_library/c_function_atoi.htm
+1. http://www.w3big.com/pt/cprogramming/c-function-atoi.html
+1. https://www.cplusplus.com/reference/cstdlib/atoi/
+1. https://www.holbertonschool.com/coding-resource-atoi-in-c
+1. WhiteSpaces: https://stackoverflow.com/questions/30033582/what-is-the-symbol-for-whitespace-in-c
 
 ## Socials
 ### Developed by Luan Carvalho.
