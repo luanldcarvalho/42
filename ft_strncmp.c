@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 12:18:10 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 17:15:11 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/10 11:49:20 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		}
 		else
 		{
-			return(s1[i] - s2[i]);
+			return (s1[i] - s2[i]);
 		}
-	n--;
+		n--;
 	}
-	return(0);
+	return (0);
 }
