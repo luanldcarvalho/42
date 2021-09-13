@@ -23,6 +23,9 @@
 1. [ft_strrchr](#ft_strrchr)
 1. [ft_strncmp](#ft_strncmp)
 1. [ft_strlcpy](#ft_strlcpy)
+1. [ft_strlcat](#ft_strlcat)
+1. [ft_strnstr](#ft_strnstr)
+1. [ft_atoi](#ft_atoi)
 
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
@@ -348,8 +351,8 @@
 |---|
 |The strnstr() function locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched.  Characters that appear after a ‘\0’ character are not searched.  Since the strnstr() function is a FreeBSD specific API, it should only be used when portability is not a concern.|
 
-|RETURN VALUE|DESCRIPTION|
-|---|---|
+|RETURN VALUE|
+|---|
 |If little is an empty string, big is returned; if little occurs nowhere in big, NULL is returned; otherwise a pointer to the first character of the first occurrence of little is returned.|
 
 ## ft_atoi
@@ -369,6 +372,8 @@
 1. https://www.cplusplus.com/reference/cstdlib/atoi/
 1. https://www.holbertonschool.com/coding-resource-atoi-in-c
 1. WhiteSpaces: https://stackoverflow.com/questions/30033582/what-is-the-symbol-for-whitespace-in-c
+1. https://www.dca.fee.unicamp.br/cursos/EA876/apostila/HTML/node140.html
+1. https://www.embarcados.com.br/ponteiro-em-c-aritmetica-de-ponteiro/
 
 ## Socials
 ### Developed by Luan Carvalho.
