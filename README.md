@@ -26,6 +26,7 @@
 1. [ft_strlcat](#ft_strlcat)
 1. [ft_strnstr](#ft_strnstr)
 1. [ft_atoi](#ft_atoi)
+1. [ft_calloc](#ft_calloc)
 
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
@@ -374,6 +375,22 @@
 1. WhiteSpaces: https://stackoverflow.com/questions/30033582/what-is-the-symbol-for-whitespace-in-c
 1. https://www.dca.fee.unicamp.br/cursos/EA876/apostila/HTML/node140.html
 1. https://www.embarcados.com.br/ponteiro-em-c-aritmetica-de-ponteiro/
+
+## ft_calloc
+
+|DESCRIPTION|
+|---|
+|The  calloc()  function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory.  The memory is set to zero. If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free().  If the multiplication of  nmemb and size would result in integer overflow, then calloc() returns an error.  By contrast, an integer overflow would not be detected in the following call to malloc(), with the result that an incorrectly sized block of memory would be allocated: malloc(nmemb * size);|
+
+|RETURN VALUE|
+|---|
+|The  malloc()  and  calloc()  functions  return a pointer to the allocated memory, which is suitably aligned for any built-in type.  On error, these functions return NULL.  NULL may also be returned by a successful call to malloc() with a size of zero, or by a successful call to calloc() with nmemb or size equal to zero.|
+
+#### finded in web:
+1. Malloc, Calloc: https://www.youtube.com/watch?v=_reV9kQVLt0
+1. https://www.youtube.com/watch?v=dQMvqz3Ooz8
+1. https://www.cplusplus.com/reference/cstdlib/calloc/
+1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/calloc?view=msvc-160
 
 ## Socials
 ### Developed by Luan Carvalho.

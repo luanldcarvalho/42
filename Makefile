@@ -17,12 +17,14 @@ FILES = ft_isalpha.c \
 		ft_strncmp.c \
 		ft_strlcpy.c \
 		ft_strlcat.c \
-		ft_strnstr.c
+		ft_strnstr.c \
+		ft_atoi.c \
+		ft_calloc.c
 
 CFLAGS = -Wall -Wextra -Werror
 OBJECTS = $(FILES:.c=.o)#Make a .o for each .c
 NAME = libft.a
-CC = clang
+CC = gcc
 RM = rm -f
 AR = ar rcs
 

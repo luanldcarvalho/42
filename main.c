@@ -1,25 +1,38 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/14 12:55:05 by lluciano          #+#    #+#             */
+/*   Updated: 2021/09/14 12:58:46 by lluciano         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-#include "ft_atoi.c"
-/*int		atoi(const char *nptr);*/
+/* calloc example */
+#include <stdio.h>      /* printf, scanf, NULL */
+#include <stdlib.h>     /* calloc, exit, free */
+
 int	main(void)
 {
-	char	*n;
+	int	i;
+	int	n;
+	int	*pData;
 
-	n = "teste";
-	ft_atoi(*n);
-
+	printf ("Amount of numbers to be entered: ");
+	scanf ("%d", &i);
+	pData = (int *) calloc(i, sizeof(int));
+	if (pData == NULL)
+		exit (1);
+	for (n = 0; n < i; n++)
+	{
+		pData[n] = 0;
+	}
+	printf ("You have entered: ");
+	for (n = 0; n < i; n++)
+		printf ("%d ", pData[n]);
+	free (pData);
 	return (0);
 }
-
-
-
-/*
-FUNCTION		NORME	COMPIL.		FORBIDDEN FUNC.		TESTS			RESULT
-ft_atoi	 		NTI		NTI			NTI					NTI				NTI
-ft_calloc		NTI		NTI			NTI					NTI				NTI
-ft_memccpy		NTI		NTI			NTI					NTI				NTI
-ft_strdup		NTI		NTI			NTI					NTI				NTI
-ft_strlcat		ok		success		clean				✓✓✓✗✗✗✗✗✗	KO
-ft_strncmp		ok		success		clean				✓✓✓✓✓✓✓✓✓✓✗		KO
-ft_strnstr		ok		success		clean				✗✗✗✓✓✗✓✓✓✓		KO
-*/

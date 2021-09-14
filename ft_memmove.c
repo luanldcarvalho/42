@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 13:56:58 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 17:34:23 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/13 18:02:39 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	destine = dest;
 	source = src;
 	ft_memcpy(memory, source, n);
-	ft_memcpy(dest, memory, n);
+	ft_memcpy(destine, memory, n);
 	free (memory);
 	return (dest);
 }
