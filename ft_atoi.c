@@ -6,12 +6,13 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/11 16:32:16 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/13 08:54:33 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/14 10:55:14 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_isspace(char c)
+
+static int	ft_isspace(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' \
 		|| c == '\r')
@@ -19,33 +20,27 @@ int	ft_isspace(char c)
 	return (0);
 }
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	index;
+	int	number;
 	int	negative;
-	int	*number;
-	int	numberindex;
 
 	index = 0;
-	negative = 1;
 	number = 0;
-	numberindex = 0;
-	if (ft_isspace(nptr[index]))
+	negative = 1;
+	while (ft_isspace(nptr[index]))
 		index++;
-	if (nptr[index] == '-')
+	if (nptr[index] == '-' || nptr[index] == '+')
 	{
-		negative = -1;
+		if (nptr[index] == '-')
+			negative = -1;
 		index++;
 	}
-	printf("%d", negative);
-	/*
-	while (ft_isdigit(nptr[i]))
+	while (ft_isdigit(nptr[index]))
 	{
-		number[ni] = nptr[i] - 48;
-		i++;
-		ni++;
+		number = (number * 10) + (nptr[index] - 48);
+		index++;
 	}
-	ni = number[0] * negative;
-	*/
-	return (numberindex);
+	return (number * negative);
 }
