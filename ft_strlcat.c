@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 14:41:49 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/11 15:10:03 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/15 14:58:21 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	a = 0;
 	b = 0;
-	if (size == 0)
-		return (0);
 	while (dst[a] != '\0' && a < size)
 		a++;
-	while (src[b] != '\0' && size > 0)
+	while (src[b] != '\0' && (a + b + 1) < size)
 	{
-		dst[a] = src[b];
-		a++;
+		dst[a + b] = src[b];
 		b++;
-		size--;
 	}
-	dst[a] = '\0';
-	return (a);
+	if (a != size)
+		dst[a + b] = '\0';
+	return (a + ft_strlen(src));
 }
 /*line31: (size == 0 || src[b] == '\0'*/
