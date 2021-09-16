@@ -6,11 +6,12 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 13:00:51 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/10 15:42:59 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/16 09:51:38 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -28,4 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-/*line24 (size == 0 || size > ft_strlen(src))*/

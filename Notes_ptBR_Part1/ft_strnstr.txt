@@ -1,0 +1,25 @@
+char	*ft_strnstr(const char *big, const char *little, size_t len)
+{
+	int	i; // declara index
+	int	length; // declara comprimento
+
+	i = 0; //index inicia com zero
+	length = ft_strlen(little); // lenght recebe o comprimento de little
+	if (length == 0) // se length é zero
+		return ((char *)big); // retorna ponteiro para big, senao ...
+	while (big[i] != 0) // enquanto big no index != 0 e len > 0
+	{
+		while (big[i] == little[i] && len > 0) //se big index é igual little index
+		{
+			if (*little == '\0')
+			{
+				i = i - length;
+				return ((char *)big + i);
+			}
+			i++;
+			len--; // e tambem decrementa len
+		}
+		i++; // se big[i] != little[i], incrementa index
+	}
+	return (NULL);
+}

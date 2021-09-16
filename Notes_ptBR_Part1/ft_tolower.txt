@@ -1,0 +1,8 @@
+#include "libft.h"
+
+int	ft_tolower(int c) // Transforma todos caracteres minusculos em maiusculos
+{
+	if (c >= 'A' && c <= 'Z') // Se o caractere é minusculo
+		return (c + 32);
+	return (c);
+}

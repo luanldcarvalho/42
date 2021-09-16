@@ -27,6 +27,7 @@
 1. [ft_strnstr](#ft_strnstr)
 1. [ft_atoi](#ft_atoi)
 1. [ft_calloc](#ft_calloc)
+1. [ft_strdup](#ft_strdup)
 
 ## To_compile
 1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
@@ -213,6 +214,7 @@
 1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/memset-wmemset?view=msvc-160
 1. https://www.tutorialspoint.com/c_standard_library/c_function_memset.htm
 1. https://www.vivaolinux.com.br/artigo/Ponteiros-void-na-linguagem-C
+1. Why unsigned char:https://youtu.be/TQYYLTCoOTY?t=111
 
 ## ft_bzero
 |DESCRIPTION|
@@ -251,6 +253,7 @@
 1. http://www.w3big.com/pt/cprogramming/c-function-memmove.html
 1. https://www.geeksforgeeks.org/memmove-in-cc/
 1. https://www.ime.usp.br/~pf/algoritmos/aulas/aloca.html
+1. https://www.youtube.com/watch?v=SJA4BebqB0M
 
 ## ft_memchr
 |DESCRIPTION|
@@ -373,6 +376,7 @@
 1. https://www.cplusplus.com/reference/cstdlib/atoi/
 1. https://www.holbertonschool.com/coding-resource-atoi-in-c
 1. WhiteSpaces: https://stackoverflow.com/questions/30033582/what-is-the-symbol-for-whitespace-in-c
+1. WhiteSpaces: https://www.youtube.com/watch?v=gTHj_7OkNAc
 1. https://www.dca.fee.unicamp.br/cursos/EA876/apostila/HTML/node140.html
 1. https://www.embarcados.com.br/ponteiro-em-c-aritmetica-de-ponteiro/
 
@@ -391,6 +395,7 @@
 1. https://www.youtube.com/watch?v=dQMvqz3Ooz8
 1. https://www.cplusplus.com/reference/cstdlib/calloc/
 1. https://docs.microsoft.com/pt-br/cpp/c-runtime-library/reference/calloc?view=msvc-160
+1. https://pt.wikipedia.org/wiki/Aloca%C3%A7%C3%A3o_din%C3%A2mica_de_mem%C3%B3ria_em_C#:~:text=calloc%20%C3%A9%20uma%20fun%C3%A7%C3%A3o%20da,zero)%20para%20cada%20um%20deles.
 
 ## ft_strdup
 

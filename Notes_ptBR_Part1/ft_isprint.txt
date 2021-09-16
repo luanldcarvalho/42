@@ -1,0 +1,10 @@
+#include "libft.h"
+
+int	ft_isprint(int c) // Verifica se é um caractere imprimível
+{
+	if (c >= 32 && c <= 126) // Se está entre 32 e 126 (incluindo eles) na tabela ascii, é imprimivel
+		return (1); // Retorna 1
+	return (0); // Se não, retorna 0
+}
+
+// Quais caracteres são imprimíveis? Fonte: http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm

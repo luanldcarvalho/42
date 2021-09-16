@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 15:33:48 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 17:34:57 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/15 15:11:17 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	str2 = s;
 	while (index < n)
 	{
-		str2[index] = (char)c;
+		str2[index] = (unsigned char)c;
 		index ++;
 	}
 	return (s);

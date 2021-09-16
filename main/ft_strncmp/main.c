@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 13:45:41 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 12:56:15 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/16 12:29:03 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,14 @@ int main ()
 	char str1[15];
 	char str2[15];
 	int ret;
-	int ret2;
 	int n;
 
 	strcpy(str1, "0abcdef");
 	strcpy(str2, "ABCDEF");
+
 	n = 5;
 
 	ret = strncmp(str1, str2, n);
-	ret2 = ft_strncmp(str1, str2, n);
 
 	printf("\nUsing [strncmp] ===> ");
 	if(ret < 0) {
@@ -38,6 +37,14 @@ int main ()
 		printf("str1 is equal to str2");
 	}
 
+	char str3[15];
+	char str4[15];
+	int ret2;
+	int n2;
+
+	strcpy(str3, "0abcdef");
+	strcpy(str4, "ABCDEF");
+	n2 = 5;
 	printf("\nUsing [ft_strncmp] ===> ");
 	if(ret2 < 0) {
 		printf("str1 is less than str2");

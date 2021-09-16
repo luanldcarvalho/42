@@ -1,0 +1,18 @@
+int	ft_strncmp(const char *s1, const char *s2, size_t n) // Compara s1 e s2 por n caracteres para ver se são iguais ou se uma string é maior que outra (em valores dos caracteres pela ASCII)
+{
+	size_t	i; //size_t i para conseguir comparar com o size_t n
+
+	i = 0; // iniciando valor de i
+	while (n > i) // se n == 0 nem entra na função
+	{
+		if (s1[i] == s2[i]) // se o valor de s1 e s2 no index for igual
+		{
+			i++; // incrementa index
+		}
+		else // caso s1 e s2 no index nao sejam mais iguais
+		{
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]); //retorna s1 menos s2 no index. Retorna um unsigned char porque está calculando a diferença de dois caracteres
+		}
+	}
+	return (0); // Retorna < 0 se s1 é menor que s2, retorna > 0 se s1 é maior que s2. E se retornar 0 é porque s1 e s2 são iguais, quando comparados n caracteres
+}

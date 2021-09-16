@@ -1,0 +1,6 @@
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n) // Escreve 0 em uma string n vezes
+{
+	ft_memset(s, 0, n); // s é a string passada, 0 é o caractere que será escrito e n é a quantidade que será escrita. Fazemos isso usando a função ft_memset que criamos anteriormente
+}

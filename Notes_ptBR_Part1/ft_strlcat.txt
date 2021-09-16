@@ -1,0 +1,20 @@
+#include "libft.h"
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size) // Concatena na string dst a string src. Concatena size bytes da src.
+{
+	size_t	a; // size_t para comparar com o size_t size
+	size_t	b;
+
+	a = 0;
+	b = 0;
+	while (dst[a] != '\0' && a < size) // Enquanto dst no index não é nulo e o index a é menor que size
+		a++; // Incrementa index a
+	while (src[b] != '\0' && (a + b + 1) < size) // Enquanto index b não é nelo e a soma de index a mais index b mais 1 é menor que size, faz o loop. Index a já foi incrementado, é o tamanho inicial da string dest, o index b é referente aos valores da string src e o + 1, é para o caractere nulo.
+	{
+		dst[a + b] = src[b]; // dst no index a + b, recebe valor de src no index b. a + b, porque quer concatenar, ou seja, em seguida da string dst
+		b++; // incrementa somente index b
+	}
+	if (a != size) // se index a for diferente de size o dest no index a + b recebe nulo. Por que se o index a fosse igual ao size, a string dest já seria truncada nela mesma. Nem seria concatenado nada de src
+		dst[a + b] = '\0';
+	return (a + ft_strlen(src)); // Retorna o tamanho da string dst mais o tamanho inicial da string src. O motivo de não fazer um simples ft_strlen(dst) é que a string fica truncada ao tamanho que foi passado como parâmetro. Se passar um size menor que as duas string somadas, no final o tamanho do dst vai ser diferente do tamanho das duas strings somadas.
+}

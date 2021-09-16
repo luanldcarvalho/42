@@ -1,0 +1,45 @@
+#include "libft.h"
+
+static int	ft_isspace(char c) // Essa função verifica se o caractere é um space. A função é estatica pois será usada somente dentro do escopo da ft_atoi
+{
+	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' \
+		|| c == '\r') // ' ' espaçovazio, '\t' tabulaçãohorizontal, '\n' novalinha, '\v' tabulacaovertical, '\f' formfeed (main para teste no fim do codigo), '\r' retornodecarro (lembre da maquina de escrever)
+		return (1); // Se for space retorna 1
+	return (0); // Se nao, retorna 0
+}
+
+int	ft_atoi(const char *nptr) // A função atoi converte ASCII para inteiro, literalmente A_scii-TO-I_nt
+{
+	int	index;
+	int	number;
+	int	negative;
+
+	index = 0;
+	number = 0;
+	negative = 1;
+	while (ft_isspace(nptr[index])) // Enquanto nptr no index for espaço, incrementa index. Isso serve para 'ignorar' os espaços em branco antes dos caracteres imprimiveis
+		index++;
+	if (nptr[index] == '-' || nptr[index] == '+') // Se nptr tem o caractere - ou +, vamos usar isso como o sinal dos numeros (que serão inteiros)
+	{
+		if (nptr[index] == '-') // Se for - negativo.
+			negative = -1; // A variavel negative recebe -1
+		index++; // Tanto se for - ou +, index incrementa 1 para ir para o proximo caractere
+	}
+	while (ft_isdigit(nptr[index])) // Aqui não temos mais espaços ou sinais de - ou +
+	{
+		number = (number * 10) + (nptr[index] - 48); // O numero recebe agora, ele mesmo vezes 10, para movimentar as casas de unidades para dezenas e assim por diante. E vamos adicionar na casa das unidades o valorr de nptr no index - 48. O menos 48 é porque o numero 0 é o 48º caractere na tabela ascii. Ou seja, se subtrairmos 48 desse caractere, será o inteiro 0. O mesmo vale para todos os numeros, até o 9
+		index++; // Incrementamos no index para verificar agora o proximo caractere
+	}
+	return (number * negative); // Retornamos o numero que obtemos no while acima multiplicado pela variavel negative que está guardando a informação se o numero final será negativo ou positivo
+}
+
+// OBS: WhiteSpaces https://www.youtube.com/watch?v=gTHj_7OkNAc
+// Para entender formfedd
+
+#include <stdio.h>
+int	main(void)
+{
+	printf("hello, world! \t tab \b cack \f formfeed \f formfeed \f formfeed");
+	return 0;
+}
+

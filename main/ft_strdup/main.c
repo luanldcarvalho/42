@@ -5,34 +5,26 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/14 12:55:05 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/14 12:58:46 by lluciano         ###   ########.fr       */
+/*   Created: 2021/09/16 12:39:53 by lluciano          #+#    #+#             */
+/*   Updated: 2021/09/16 12:55:47 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* calloc example */
-#include <stdio.h>      /* printf, scanf, NULL */
-#include <stdlib.h>     /* calloc, exit, free */
+#include <stdio.h>
+#include <string.h>
 
 int	main(void)
 {
-	int	i;
-	int	n;
-	int	*pData;
+	char	source[] = "github.com/luanldcarvalho";
+	char	*target = strdup(source);
+	char	source2[] = "github.com/luanldcarvalho";
+	char	*target2 = ft_strdup(source2);
 
-	printf ("Amount of numbers to be entered: ");
-	scanf ("%d", &i);
-	pData = (int *) calloc(i, sizeof(int));
-	if (pData == NULL)
-		exit (1);
-	for (n = 0; n < i; n++)
-	{
-		pData[n] = 0;
-	}
-	printf ("You have entered: ");
-	for (n = 0; n < i; n++)
-		printf ("%d ", pData[n]);
-	free (pData);
+	printf("\nUsing [strdup ] ===> \n");
+	printf("%s", target);
+
+	printf("\n\nUsing [ft_strdup ] ===> \n");
+	printf("%s", target2);
 	return (0);
 }

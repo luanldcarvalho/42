@@ -1,0 +1,12 @@
+#include "libft.h"
+
+int	ft_isalpha(int c) // Se alpha retorna numero maior que zero
+{
+	if (c >= 'A' && c <= 'Z') // Se maiusculo retorna 1
+		return (1);
+	if (c >= 'a' && c <= 'z') // Se minusculo retorna 2
+		return (2);
+	return (0); // Se nao é nem maiusculo nem minusculo retorna 0
+}
+
+// OBS: Poderia fazer 'AZ' e 'az' na mesma condição e retornar 1, estaria certo também. Porém, da maneira que fiz fica mais completo.

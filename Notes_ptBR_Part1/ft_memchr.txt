@@ -1,0 +1,18 @@
+#include "libft.h"
+
+void	*ft_memchr(const void *s, int c, size_t n) // Procura na string s a primeira ocorrencia do char c. Procura em n bytes, independendo do tamanho da string.
+{
+	unsigned char	*str; // Unsigned char por que o ch(char) é tratado como unsigned char, pela tabela ASCII (0 a 255)
+	unsigned char	ch; // O char deve ser tratado como unsigned char (ASCII)
+
+	str = (unsigned char *)s; // str aponta para o mesmo lugar que a string s, mas dessa vez fizemos um casting para colocar os dados como unsigned char
+	ch = (unsigned char)c; // ch recebe o valor de c, feito o casting para colocar os dados como unsigned char
+	while (n > 0) // Enquanto n(size_t) > 0 continua procurando, quando é igual a zero não procura mais, mesmo que não esteja no fim da string
+	{
+		if (*str == ch) // Se o valor de string é igual ao char
+			return (str); // Retorna um o valor do ponteiro que está apontando para primeiro incidencia do char na string
+		n--; // Se o valor apontado no momento não é igual a ch, decrementa um n de bytes que serão procurado e
+		str++; // Incrementa str para procurar no proximo byte agora
+	}
+	return (NULL); // Caso não seja encontrado nenhum char na string retona NULL
+}
