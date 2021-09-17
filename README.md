@@ -303,7 +303,7 @@
 ## ft_strrchr
 |DESCRIPTION|
 |---|
-|The strchr() function returns a pointer to the first occurrence of the character c in the string s.|
+|The strrchr() function returns a pointer to the last occurrence of the character c in the string s.|
 
 |RETURN VALUE|
 |---|
@@ -406,6 +406,35 @@
 |RETURN VALUE|
 |---|
 |On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.|
+
+### Additional functions
+
+## ft_substr
+|Prototype|
+|---|
+|char *ft_substr(char const *s, unsigned int start, size_t len);
+|
+
+|Parameters|
+|---|
+|#1. The string from which to create the substring.|
+|#2. The start index of the substring in the string ’s’.|
+|#3. The maximum length of the substring.|
+
+|Return value|
+|---|
+|The substring. NULL if the allocation fails|
+
+|External functs|
+|---|
+|malloc|
+
+|Description|
+|---|
+|Allocates (with malloc(3)) and returns a substring
+from the string ’s’. The substring begins at index ’start’ and is of
+maximum size ’len’.
+|
 
 #### finded in web:
 1. https://www.geeksforgeeks.org/strdup-strdndup-functions-c/
