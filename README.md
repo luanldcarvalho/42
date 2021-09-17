@@ -5,6 +5,8 @@
 1. [To compile in C](#To_compile)
 1. [libft](#libft)
 1. [Makefile](#Makefile)
+### Libc functions (Part 1)
+1. [Libc functions](#Libc_functions)
 1. [ft_ftisalpha](#ft_isalpha)
 1. [ft_ftisdigit](#ft_isdigit)
 1. [ft_isalnum](#ft_isalnum)
@@ -27,19 +29,21 @@
 1. [ft_strnstr](#ft_strnstr)
 1. [ft_atoi](#ft_atoi)
 1. [ft_calloc](#ft_calloc)
+### Additional functions (Part 2)
+1. [Additional functions](#Additional_functions)
 1. [ft_strdup](#ft_strdup)
 
 ## To_compile
-1. Compile, Makefile: https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p
-1. General about C: https://www.youtube.com/watch?v=VnH7OVFj_pA&list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW
-1. size_t: https://www.tutorialspoint.com/size-t-data-type-in-c#:~:text=The%20datatype%20size_t%20is%20unsigned,It%20can%20never%20be%20negative.
-1. Casting: https://www.ime.usp.br/~pf/algoritmos/aulas/footnotes/cast.html
+1. [YouTube: Playlist about C](https://www.youtube.com/watch?v=VnH7OVFj_pA&list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW)
+1. [Youtube: Playlist about Makefile](https://youtube.com/playlist?list=PL3ZslI15yo2pCf0WpZmV-ga02kMPxKH3p)
+1. [About size_t](https://www.tutorialspoint.com/size-t-data-type-in-c#:~:text=The%20datatype%20size_t%20is%20unsigned,It%20can%20never%20be%20negative.)
+1. [About Casting](https://www.ime.usp.br/~pf/algoritmos/aulas/footnotes/cast.html)
 
 #### Others_References
-1. https://github.com/pbie42/libft42commented
-1. https://github.com/jtoty/Libftest
-1. Is Printable Characters: http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm
-1. ASCII Table: https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm
+1. [ASCII Table](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm)
+1. [Printable Characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)
+1. [Libft Commented Repository](https://github.com/pbie42/libft42commented)
+1. [Libft Test Repository](https://github.com/jtoty/Libftest)
 
 ## libft
 
@@ -97,6 +101,8 @@
 #### finded in web:
 1. https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
 1. https://man7.org/linux/man-pages/man1/gcc.1.html
+
+# Libc_functions
 
 ## ft_isalpha
 ##### man isalpha:
@@ -407,13 +413,17 @@
 |---|
 |On  success,  the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient memory was available, with errno set to indicate the cause of the error.|
 
-### Additional functions
+#### finded in web:
+1. https://www.geeksforgeeks.org/strdup-strdndup-functions-c/
+1. https://man7.org/linux/man-pages/man3/strdup.3.html
+1. https://www.ti-enxame.com/pt/c/strcpy-vs-strdup/1070183184/
+
+# Additional_functions
 
 ## ft_substr
 |Prototype|
 |---|
-|char *ft_substr(char const *s, unsigned int start, size_t len);
-|
+|char *ft_substr(char const *s, unsigned int start, size_t len);|
 
 |Parameters|
 |---|
@@ -433,14 +443,29 @@
 |---|
 |Allocates (with malloc(3)) and returns a substring
 from the string ’s’. The substring begins at index ’start’ and is of
-maximum size ’len’.
-|
+maximum size ’len’.|
 
-#### finded in web:
-1. https://www.geeksforgeeks.org/strdup-strdndup-functions-c/
-1. https://man7.org/linux/man-pages/man3/strdup.3.html
-1. https://www.ti-enxame.com/pt/c/strcpy-vs-strdup/1070183184/
+## ft_strjoin
+|Prototype|
+|---|
+|char *ft_strjoin(char const *s1, char const *s2);|
 
+|Parameters|
+|---|
+|#1. The prefix string.|
+|#2. The suffix string.|
+
+|Return value|
+|---|
+|The new string. NULL if the allocation fails.|
+
+|External functs|
+|---|
+|malloc|
+
+|Description|
+|---|
+|Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.|
 
 ## Socials
 ### Developed by Luan Carvalho.
