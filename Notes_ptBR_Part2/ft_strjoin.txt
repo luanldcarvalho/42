@@ -1,0 +1,30 @@
+#include "libft.h"
+
+char	*ft_strjoin(char const *s1, char const *s2) // Essa função concatena a string 1 como prefixo e a string 2 como sufixo. Ou seja, s1 seguida da s2.
+{
+	char	*pointer;
+	int		counter; // Onde iremos armazenar o tamanho total da string que será retornada
+	int		index;
+	int		index2;
+
+	counter = ft_strlen(s1) + ft_strlen(s2) + 1; // Tamanho da string1 mais tamanho da string2 mais 1, para reservar o byte do caractere nulo.
+	pointer = malloc(counter); // Nosso ponteiro pointer recebe uma alocação de memoria de tamanho counter
+	index = 0;
+	index2 = 0;
+	pointer[counter] = '\0'; // Nosso pointer recebe um caractere nulo em seu ultimo index, para indicar o fim da string
+	while (pointer != NULL) // Enquanto o pointer não chega no nulo, ou seja no seu fim
+	{
+		while (s1[index] != '\0') // Enquanto string s1 nao chega no seu fim
+		{
+			pointer[index] = s1[index]; // O pointer index recebe a s1 no seu index
+			index++; // incrementamos o index
+		}
+		while (s2[index2] != '\0') // Enquanto string s2 nao chega no seu fim
+		{
+			pointer[index + index2] = s2[index2]; // O pointer index + index2 recebe a s2 no seu index2
+			index2++; // Incrementamos somente o index2 agora
+		}
+		return (pointer); // Por fim, retornamos o ponteiro pointer que esta apontando para o inicio da string
+	}
+	return (NULL); // Caso não seja possível possível fazer a concatenação. Retornamos NULL
+}

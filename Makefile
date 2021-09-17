@@ -21,7 +21,8 @@ FILES = ft_isalpha.c \
 		ft_atoi.c \
 		ft_calloc.c \
 		ft_strdup.c \
-		ft_substr.c
+		ft_substr.c \
+		ft_strjoin.c
 
 CFLAGS = -Wall -Wextra -Werror
 OBJECTS = $(FILES:.c=.o)#Make a .o for each .c
