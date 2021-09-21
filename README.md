@@ -32,6 +32,8 @@
 ### Additional functions (Part 2)
 1. [Additional functions](#Additional_functions)
 1. [ft_strdup](#ft_strdup)
+1. [ft_strjoin](#ft_strjoin)
+1. [ft_strtrim](#ft_strtrim)
 
 ## To_compile
 1. [YouTube: Playlist about C](https://www.youtube.com/watch?v=VnH7OVFj_pA&list=PLa75BYTPDNKZWYypgOFEsX3H2Mg-SzuLW)
@@ -466,6 +468,28 @@ maximum size ’len’.|
 |Description|
 |---|
 |Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.|
+
+## ft_strtrim
+|Prototype|
+|---|
+|char *ft_strtrim(char const *s1, char const *set);|
+
+|Parameters|
+|---|
+|#1. The string to be trimmed.|
+|#2. The reference set of characters to trim.|
+
+|Return value|
+|---|
+|The trimmed string. NULL if the allocation fails.|
+
+|External functs|
+|---|
+|malloc|
+
+|Description|
+|---|
+|Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string|
 
 ## Socials
 ### Developed by Luan Carvalho.

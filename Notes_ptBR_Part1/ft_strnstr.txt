@@ -1,4 +1,4 @@
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len) // Retorna um ponteiro para o inicio da primeira ocorrencia da string menor dentro da string maior
 {
 	int	i; // declara index
 	int	length; // declara comprimento

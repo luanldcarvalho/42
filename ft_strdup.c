@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 11:15:43 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/15 11:43:22 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/20 21:03:56 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s)
 
 	index = 0;
 	string = malloc(ft_strlen(s) + 1);
-	if (s == NULL)
+	if (s == NULL || string == NULL)
 		return (NULL);
 	while (index < (ft_strlen(s) + 1))
 	{

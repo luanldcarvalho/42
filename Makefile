@@ -1,4 +1,4 @@
-FILES = ft_isalpha.c \
+SRC = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
 		ft_isascii.c \
@@ -25,7 +25,7 @@ FILES = ft_isalpha.c \
 		ft_strjoin.c
 
 CFLAGS = -Wall -Wextra -Werror
-OBJECTS = $(FILES:.c=.o)#Make a .o for each .c
+OBJECTS = $(SRC:.c=.o)#Make a .o for each .c
 NAME = libft.a
 CC = gcc
 RM = rm -f
@@ -58,3 +58,6 @@ test: all
 # -I, incluir o header "cabeçalho" o ./ na frente é para informar o diretorio.
 # -f, caso o arquivo não exista. Não retorna erro.
 
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJECTS)
