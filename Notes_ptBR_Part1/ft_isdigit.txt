@@ -1,8 +1,0 @@
-#include "libft.h"
-
-int	ft_isdigit(int c) // Verifica se é um digito (um numero)
-{
-	if (c >= '0' && c <= '9') // Se for um digito (um numero) retorna 1
-		return (1);
-	return (0); //Sse nao retorna 0
-}

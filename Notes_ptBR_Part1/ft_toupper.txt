@@ -1,8 +1,0 @@
-#include "libft.h"
-
-int	ft_toupper(int c) // Transforma todos caracteres minusculos em maiusculos
-{
-	if (c >= 'a' && c <= 'z') // Se o caractere é minusculo
-		return (c - 32); // Pela tabela ASCII, seu valor - 32 é igual ao seu respectivo maiusculo. Com isso retornamos o resultado dessa operação
-	return (c); // Se não for minusculo, retorna o proprio caractere. Isso pode acontecer caso já seja maiusculo, caso seja um numero ou qualquer outro caractere que não se encaixe em minusculo
-}

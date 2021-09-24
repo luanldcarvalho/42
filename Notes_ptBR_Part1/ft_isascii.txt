@@ -1,8 +1,0 @@
-#include "libft.h"
-
-int	ft_isascii(int c) // Verifica se está na tabela ascii
-{
-	if (c >= 0 && c <= 255) // A tabela ascii tem 256 caracteres, ou seja de 0 a 255.
-		return (1); // Se ascii, retorna 1
-	return (0); // Se não, retorna 0
-}
