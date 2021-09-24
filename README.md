@@ -29,9 +29,10 @@
 1. [ft_strnstr](#ft_strnstr)
 1. [ft_atoi](#ft_atoi)
 1. [ft_calloc](#ft_calloc)
+1. [ft_strdup](#ft_strdup)
 ### Additional functions (Part 2)
 1. [Additional functions](#Additional_functions)
-1. [ft_strdup](#ft_strdup)
+1. [ft_substr](#ft_substr)
 1. [ft_strjoin](#ft_strjoin)
 1. [ft_strtrim](#ft_strtrim)
 
@@ -443,9 +444,7 @@
 
 |Description|
 |---|
-|Allocates (with malloc(3)) and returns a substring
-from the string ’s’. The substring begins at index ’start’ and is of
-maximum size ’len’.|
+|Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.|
 
 ## ft_strjoin
 |Prototype|
@@ -490,6 +489,77 @@ maximum size ’len’.|
 |Description|
 |---|
 |Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string|
+
+## ft_split
+|Prototype|
+|---|
+|char **ft_split(char const *s, char c);|
+
+|Parameters|
+|---|
+|#1. The string to be split.|
+|#2. The delimiter character.|
+
+|Return value|
+|---|
+|The array of new strings resulting from the split. NULL if the allocation fails|
+
+|External functs|
+|---|
+|malloc, free|
+
+|Description|
+|---|
+|Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must be ended by a NULL pointer.|
+
+## ft_itoa
+|Prototype|
+|---|
+|char *ft_itoa(int n);|
+
+|Parameters|
+|---|
+|#1. the integer to convert.|
+
+|Return value|
+|---|
+|The string representing the integer. NULL if the
+allocation fails.bc|
+
+|External functs|
+|---|
+|malloc|
+
+|Description|
+|---|
+|Allocates (with malloc(3)) and returns a string
+representing the integer received as an argument.
+Negative numbers must be handled.|
+
+## ft_putchar_fd
+|Prototype|
+|---|
+|void ft_putchar_fd(char c, int fd);|
+
+|Parameters|
+|---|
+|#1. The character to output.|
+|#2. The file descriptor on which to write.|
+
+|Return value|
+|---|
+|None|
+
+|External functs|
+|---|
+|write|
+
+|Description|
+|---|
+|Outputs the character ’c’ to the given file
+descriptor.|
+
+
 
 ## Socials
 ### Developed by Luan Carvalho.
