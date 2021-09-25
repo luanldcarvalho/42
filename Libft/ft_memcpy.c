@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 13:36:59 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/20 22:27:11 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/25 12:33:48 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned long	index;
-	char			*destine;
-	const char		*source;
+	size_t			index;
+	unsigned char	*destine;
+	unsigned char	*source;
 
 	index = 0;
-	destine = dest;
-	source = src;
+	destine = (unsigned char *)dest;
+	source = (unsigned char *)src;
+	if (dest == NULL && src == NULL)
+		return (dest);
 	while (n > index)
 	{
 		destine[index] = source[index];
