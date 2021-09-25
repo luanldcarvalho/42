@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 14:02:05 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/24 12:28:00 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/25 15:46:36 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	index;
 	size_t	index2;
 
-	pointer = (char *)malloc(len + 1);
-	if (pointer == NULL || s == NULL)
+	if (s == NULL)
 		return (NULL);
+	pointer = malloc((len + 1) * sizeof(char));
+	if (pointer == NULL)
+		return (NULL);
+	if (start + len > ft_strlen(s))
+		return (pointer);
 	index = 0;
 	index2 = 0;
 	while (index != start)
@@ -37,3 +41,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	pointer[index2] = 0;
 	return (pointer);
 }
+
