@@ -6,8 +6,23 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 14:04:32 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/16 14:04:33 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/27 10:40:53 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putstr_fd(char *s, int fd);
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	int	i;
+
+	i = 0;
+	if (s != 0 && fd != 0)
+	{
+		while (s[i] != '\0')
+		{
+			ft_putchar_fd(s[i], fd);
+			i++;
+		}
+	}
+}
