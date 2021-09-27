@@ -6,44 +6,64 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 14:03:27 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/22 16:35:43 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:23:07 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-static int	power(int n)
-{
-	int	dec;
 
-	dec = 1;
-	while (n)
+static char	*itoafc(unsigned int n, char *nstr, int len, int negative)
+{
+	nstr[--len] = '\0';
+	while (len > 0)
 	{
-		dec = dec * 10;
-		n--;
+		len--;
+		nstr[len] = (n % 10) + 48;
+		n = n / 10;
 	}
-	return (dec);
+	if (negative == 1)
+		nstr[len] = '-';
+	return (nstr);
+}
+
+static size_t	lenght_num(int num)
+{
+	size_t	size;
+
+	size = 0;
+	if (num == 0)
+		return (1);
+	while (num != 0)
+	{
+		size++;
+		num = num / 10;
+	}
+	return (size);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*num;
-	int		counter;
-	int		i;
+	char			*nstr;
+	int				len;
+	int				negative;
+	unsigned int	n_unsigned;
 
-	i = 0;
-	num = 0;
-	num[i] = n;
-	while (num[i])
+	negative = 0;
+	len = lenght_num(n) + 1;
+	if (n < 0)
 	{
-		counter++;
-		i++;
+		len = len + 1;
+		nstr = malloc(sizeof(char) * len);
+		negative = 1;
+		n_unsigned = n * -1;
 	}
-	num[i] = malloc(n);
-	while (counter > 0)
+	else
 	{
-		num[counter] = (char)((n * power(counter)) + 48);
+		nstr = malloc(sizeof(char) * len);
+		n_unsigned = n;
 	}
-	return (num);
+	if (nstr == NULL)
+		return (NULL);
+	itoafc(n_unsigned, nstr, len, negative);
+	return (nstr);
 }
-*/
