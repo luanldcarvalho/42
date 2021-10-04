@@ -8,12 +8,12 @@
 1. [About size_t](https://www.tutorialspoint.com/size-t-data-type-in-c#:~:text=The%20datatype%20size_t%20is%20unsigned,It%20can%20never%20be%20negative.)
 1. [About Casting](https://www.ime.usp.br/~pf/algoritmos/aulas/footnotes/cast.html)
 
-### Makefile
+### Notes/ Makefile
 1. [Makefile](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Makefile)
 
-### Libc functions (Part 1)
-1. [ft_ftisalpha](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/)
-1. [ft_ftisdigit](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_isdigit/)
+### Notes/ Libc functions (Part 1)
+1. [ft_isalpha](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_isalpha/)
+1. [ft_isdigit](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_isdigit/)
 1. [ft_isalnum](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_isalnum/)
 1. [ft_isascii](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_isascii/)
 1. [ft_isprint](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_isprint/)
@@ -22,7 +22,7 @@
 1. [ft_strlen](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_strlen/)
 1. [ft_memset](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_memset/)
 1. [ft_bzero](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_bzero/)
-1. [ft_memscpy](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_memcpy/)
+1. [ft_memcpy](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_memcpy/)
 1. [ft_memmove](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_memmove/)
 1. [ft_memchr](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_memchar/)
 1. [ft_memcmp](https://github.com/luanldcarvalho/42/tree/main/Libft/Notes/Libc/ft_memcmp/)

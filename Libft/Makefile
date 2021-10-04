@@ -28,7 +28,10 @@ SRC = ft_isalpha.c \
 		ft_itoa.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
-		ft_putendl_fd.c
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c \
+		ft_strmapi.c \
+		ft_striteri.c
 
 CFLAGS = -Wall -Wextra -Werror
 OBJECTS = $(SRC:.c=.o)#Make a .o for each .c
