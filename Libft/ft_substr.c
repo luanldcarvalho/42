@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 14:02:05 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/25 15:46:36 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/10/05 22:30:14 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	while (s[index])
 	{
 		if (index2 < len)
-		{
-			pointer[index2] = s[index];
-			index2++;
-		}
+			pointer[index2++] = s[index];
 		index++;
 	}
 	pointer[index2] = 0;
 	return (pointer);
 }
-
