@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 14:03:09 by lluciano          #+#    #+#             */
-/*   Updated: 2021/10/05 22:25:03 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:30:21 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static char	*to_split(char const *s, int *ires, char c)
 	start = *ires;
 	while (s[*ires] != c && s[*ires] != 0)
 		*ires = *ires + 1;
-	result = malloc(sizeof(char *) * (*ires - start + 1));
+	result = malloc(sizeof(char) * (*ires - start + 1));
 	i = 0;
 	while (start != *ires)
 	{
@@ -50,7 +50,7 @@ static char	*to_split(char const *s, int *ires, char c)
 		start++;
 		i++;
 	}
-	result[i] = 0;
+	result[i] = '\0';
 	return (result);
 }
 

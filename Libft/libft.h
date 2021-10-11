@@ -1,16 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/11 14:33:48 by lluciano          #+#    #+#             */
+/*   Updated: 2021/10/11 14:33:49 by lluciano         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include	<stdio.h> //excluir antes de finalizar
-# include	<string.h> //excluir antes de finalizar
 # include	<stdlib.h>
 # include	<unistd.h>
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -46,7 +50,5 @@ void	ft_putendl_fd(char *s, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putnbr_fd(int n, int fd);
-t_list	*ft_lstnew(void *content);
-
 
 #endif

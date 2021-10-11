@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 20:28:33 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/08 12:05:00 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:25:54 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	us2 = (unsigned char *)s2;
 	while (n > 0)
 	{
-		if (*us1 > *us2)
-			return (1);
-		else if (*us1 < *us2)
-			return (-1);
+		if (*us1 > *us2 || *us1 < *us2)
+			return (*us1 - *us2);
 		us1++;
 		us2++;
 		n--;

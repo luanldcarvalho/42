@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/10/07 11:31:44 by lluciano          #+#    #+#              #
+#    Updated: 2021/10/11 14:26:39 by lluciano         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRC = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
@@ -34,9 +46,11 @@ SRC = ft_isalpha.c \
 		ft_striteri.c
 
 CFLAGS = -Wall -Wextra -Werror
-OBJECTS = $(SRC:.c=.o)#Make a .o for each .c
+
+OBJECTS = $(SRC:.c=.o)
+
 NAME = libft.a
-CC = gcc
+CC = clang
 RM = rm -f
 AR = ar rcs
 
@@ -59,14 +73,4 @@ fclean: clean
 
 re: fclean all
 
-test: all
-	./Libftest/grademe.sh
-
-#• Your Makefile must at least contain the rules $(NAME), all, clean, fclean and re.
-# -c, compila um objeto (que nao e um programa ".c")
-# -I, incluir o header "cabeçalho" o ./ na frente é para informar o diretorio.
-# -f, caso o arquivo não exista. Não retorna erro.
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJECTS)
+.PHONY: all, bonus, clean, fclean, re

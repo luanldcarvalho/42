@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 15:50:20 by lluciano          #+#    #+#             */
-/*   Updated: 2021/09/13 09:19:35 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/10/11 14:28:06 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strchr(const char *s, int c)
 	str = (char *)s;
 	i = 0;
 	leng_s = ft_strlen(s);
+	if (c > 127)
+		c = c % 256;
 	while (i < leng_s)
 	{
 		if (str[i] == c)
