@@ -6,7 +6,7 @@
 #    By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/07 11:31:44 by lluciano          #+#    #+#              #
-#    Updated: 2021/10/07 11:31:45 by lluciano         ###   ########.fr        #
+#    Updated: 2021/10/15 12:11:20 by lluciano         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ AR = ar rcs
 all: $(NAME)
 
 clean:
-	$(RM) $(NAME)
+	$(RM) $(OBJECTS)
 
 limp:
 	$(RM) a.out
@@ -69,7 +69,7 @@ $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $(OBJECTS)
 
 fclean: clean
-	$(RM) $(OBJECTS) -f
+	$(RM) $(NAME)
 
 re: fclean all
 
