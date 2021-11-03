@@ -1,4 +1,4 @@
 texto1
-testo2
+texto2
 texto3
 fim

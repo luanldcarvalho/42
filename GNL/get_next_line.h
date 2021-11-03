@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:47 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/03 10:35:00 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/03 12:35:32 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,6 @@ char	*get_next_line(int fd);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+char	*ft_strchr(const char *s, int c);
+size_t	ft_strlen(const char *s);
 #endif
