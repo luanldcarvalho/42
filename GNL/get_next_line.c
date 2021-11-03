@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:43 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/03 12:39:43 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/03 12:47:16 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,6 +115,14 @@ int	ft_reader(int fd)
 	char	*savestr;
 	int		i;
 
+	str = (char *)malloc(sizeof(char) * BUFFER_SIZE + 1);
+	savestr = (char *)malloc(sizeof(char) * BUFFER_SIZE + 1);
+	if (!str || !savestr)
+	{
+		free(str);
+		free(savestr);
+		return (0);
+	}
 	i = 1;
 	while (i--)
 	{
@@ -125,7 +133,7 @@ int	ft_reader(int fd)
 		{
 			//printf("\n>>> Na string Acima ^ temos uma quebra de linha.\n");
 			savestr = ft_saveafter(str);
-			printf("\n>>> saveafter: %s\n", str);
+			printf("\n>>> saveafter: %s\n", savestr);
 		}
 	}
 	return (0);
