@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:43 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/03 12:47:16 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/03 15:33:15 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,38 +105,32 @@ char	*ft_saveafter(char *str)
 	printf("Dentro do saveafter");
 	while (*str != '\n')
 		str++;
-	str++; // para pular o \n e retornar o inicio da prox palavra
+	str++; //Para pular o \n e retornar o inicio da prox palavra
 	return (str);
 }
 
-int	ft_reader(int fd)
+char	*ft_reader(int fd)
 {
+	int		readsize;
+	char	*buff;
 	char	*str;
-	char	*savestr;
-	int		i;
 
-	str = (char *)malloc(sizeof(char) * BUFFER_SIZE + 1);
-	savestr = (char *)malloc(sizeof(char) * BUFFER_SIZE + 1);
-	if (!str || !savestr)
+	buff = (char *)malloc(sizeof(char) * BUFFER_SIZE + 1);
+	if (!buff)
 	{
-		free(str);
-		free(savestr);
+		free(buff);
 		return (0);
 	}
-	i = 1;
-	while (i--)
+	readsize = read(fd, buff, BUFFER_SIZE);
+	if (readsize < 0)
+		return (0);
+	printf("\n>>> Lendo o buff\n%s\n>>>fim da leitura\n", buff);
+	if (ft_strchr(buff, '\n'))
 	{
-		read(fd, str, BUFFER_SIZE);
-		ft_strjoin(savestr, str);
-		printf("------\nafter read%d\n------\n>>> Start\n%s\n>>> End\n", i, str);
-		if (ft_strchr(str, '\n'))
-		{
-			//printf("\n>>> Na string Acima ^ temos uma quebra de linha.\n");
-			savestr = ft_saveafter(str);
-			printf("\n>>> saveafter: %s\n", savestr);
-		}
+		str = ft_saveafter(buff);
+		printf("\n>>> Depois da quebra: %s\n", str);
 	}
-	return (0);
+	return (buff);
 }
 
 int	main(void)
@@ -144,8 +138,6 @@ int	main(void)
 	int	fd;
 
 	fd = open("teste.txt", O_RDONLY);
-	printf("\n>>> File descriptor: %d\n", (fd));
-	printf("\n>>> Calling ft_reader here <<<\n\n");
 	ft_reader(fd);
 	return (0);
 }
