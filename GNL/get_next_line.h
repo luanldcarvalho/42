@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:47 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/03 12:35:32 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/03 16:37:45 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,17 @@
 #  define BUFFER_SIZE 10
 # endif
 
-# include <unistd.h> //read
-# include <stdlib.h>
+# include <stdlib.h> //malloc
+# include <unistd.h> //function read
+# include <fcntl.h> //function open
+# include <stdio.h> //function printf
 
-char	*get_next_line(int fd);
+char	*ft_strchr(const char *s, int c);
+char	*ft_saveafter(char *str);
+char	*ft_reader(int fd);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *s);
+
 #endif
