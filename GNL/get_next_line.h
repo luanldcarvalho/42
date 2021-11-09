@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:47 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/06 15:02:57 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/09 10:51:23 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,14 @@
 # include <stdio.h> //function printf
 
 char	*ft_strchr(const char *s, int c);
-char	*ft_saveafter(char *str);
-char	*ft_reader(char *readline, int fd);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
+
+char	*ft_saveafter(char *str);
+char	*ft_reader(char *next_line);
+char	*ft_nextline(char *line_readed, int fd);
+char	*get_next_line(int fd);
 
 #endif
