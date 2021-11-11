@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:43 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/09 10:52:37 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/11 18:01:12 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 char	*ft_saveafter(char *str)
 {
+	if (!str)
+		return (NULL);
 	printf("Dentro do saveafter");
 	while (*str != '\n')
 		str++;
@@ -55,6 +57,7 @@ char	*ft_nextline(char *next_line, int fd)
 {
 	int		size_readed;
 	char	*buff;
+	char	*temp;
 
 	buff = malloc(sizeof(char) * (BUFFER_SIZE + 1)); // Tamanho buffersize + \0
 	if (buff == NULL) // Se erro na alocação, return NULL e free BUFF
@@ -63,6 +66,7 @@ char	*ft_nextline(char *next_line, int fd)
 		return (NULL);
 	}
 	size_readed = 1; // Porque enquanto 1 tem arquivo para ser lido, 0 fim do arquivo e -1 erro no read
+	temp = NULL;
 	while (!ft_strchr(next_line, '\n') && size_readed != 0)
 	{
 		size_readed = read(fd, buff, BUFFER_SIZE);
@@ -72,7 +76,11 @@ char	*ft_nextline(char *next_line, int fd)
 			return (NULL);
 		}
 		buff[size_readed] = '\0';
-		next_line = ft_strjoin(next_line, buff);
+		temp = next_line;
+		next_line = ft_strjoin(temp, buff);
+		free(temp);
+		temp = NULL;
+		return (next_line);
 	}
 	free(buff);
 	return (next_line);

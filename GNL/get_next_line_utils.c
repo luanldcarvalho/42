@@ -6,7 +6,7 @@
 /*   By: lluciano <lluciano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 18:17:54 by lluciano          #+#    #+#             */
-/*   Updated: 2021/11/03 16:22:33 by lluciano         ###   ########.fr       */
+/*   Updated: 2021/11/11 13:45:17 by lluciano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ size_t	ft_strlen(const char *s)
 	int	index;
 
 	index = 0;
+	if (!s)
+		return (0);
 	while (s[index] != '\0')
 	{
 		index ++;

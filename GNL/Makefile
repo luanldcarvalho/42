@@ -13,12 +13,13 @@ clean:
 
 re: fclean all
 
-debug: $(CC) $(CFLAGS) -g $(SRC) -I ./ -o debug
+debug:
+	$(CC) $(CFLAGS) -g $(SRC) -I ./ -o debug
 
 leak: debug
 	valgrind --tool=memcheck --leak-check=full --track-origins=yes --show-reachable=yes --num-callers=20 --track-fds=yes ./debug
 
-.PHONY: all, clean, re
+.PHONY: all, clean, re, debug, leak
 
 # -c para quando não tem main
 # -I para indicar onde está o header.
